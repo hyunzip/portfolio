@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>NA-PORTFOLIO</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/slick-1.8.1/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" media="all and (max-width: 768px)" href="./css/mindex.css">
+</head>
+
+<body>
+    <!-- https://animate.style/ -->
+    <header>
+        <a href="index.html">NA-JIHYUN</a>
+        <ul class="menu">
+            <li data-id="scroll01"><a href="#">ABOUT</a></li>
+            <li data-id="scroll02"><a href="#">PORTFOLIO</a></li>
+            <li data-id="scroll03"><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <div class="intro">
+        <!-- <div class="backimg"></div> -->
+        <!-- <div class="mainTitle">
+            <h2></h2>
+        </div> -->
+    </div>
+    <section class="about scroll01">
+        <h2>ABOUT</h2>
+        <h2>👩🏻 JIHYUN NA</h2>
+        <div class="con01">
+            <h3>📌 license & education</h3>
+            <ul>
+                <li>
+                    <span>2021.04</span>
+                    <span>웹디자인 기능사 자격증 취득</span>
+                </li>
+                <li>
+                    <span>2022.02</span>
+                    <span>웹디자인(UI/UX) & 웹퍼블리셔 취업 과정 수료 (6개월 과정)</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio scroll02">
+        <h2>📂 PORTFOLIO</h2>
+        <div class="tab">
+            <ul>
+                <li data-id="tab01" class="on">Project A</li>
+                <li data-id="tab02">Project B</li>
+                <li data-id="tab03">Project C</li>
+            </ul>
+        </div>
+        <!-- Project A - haagendazs -->
+        <div id="tab01" class="project topicA on">
+            <div class="proInfo">
+                <div class="title">
+                    <h3>🍦 Project A</h3>
+                    <p>하겐다즈 홈페이지 리뉴얼</P>
+                </div>
+                <div class="preText">
+                    <div class="num01" data-aos="fade-up" data-aos-duration="2000">
+                        <h4>🔍 기존 홈페이지 분석</h4>
+                        <p>
+                            프랜차이즈 브랜드 홈페이지의 경우 일반적으로 브랜드에 대한 간단한 소개와 판매하는
+                            상품 및 베스트 셀러를 소개하고,<br> 매장이 운영되는 지역을 안내하는 레이아웃을 기반으로 구성되어 있습니다.<br>
+                            하겐다즈 공식 홈페이지는 미국 기업인 〈General Mills〉 에서 일괄 운영하고 있어 디자인 및 구성이 획일화 되어있었습니다.<br>
+                            사용자의 입장에서 얻고자 하는 정보를 메인에서 확인할 수 없었고, 이미 제공되고 있는 정보의 의도 또한 정확하게 파악할 수 없었습니다.
+                        </p>
+                    </div>
+                    <div class="num02" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>💻 기획의도 및 구현 포인트</h4>
+                        <p>
+                            다국어 페이지 서비스를 지원하는 〈General Mills〉 산하 브랜드인 하겐다즈를 부각시키고 싶었고, <br>
+                            <b>그 과정에서 획일화된 디자인을 벗어나야 하고 사용자들이 쉽게 원하는 정보를 얻을 수 있는 홈페이지가 필요하다고 생각했습니다.</b>
+                        </p>
+                    </div>
+                    <div class="keyword" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>🔑 Keyword</h4>
+                        <div class="keyBox">
+                            <p>#정보전달</p>
+                            <p>#사용성 고려</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <h4>📍 메인페이지에서 하겐다즈 핵심 정보 제공</h4>
+                        <p>
+                            하겐다즈 리뉴얼을 위해 조사한 자료 중에 <b>사용자가 홈페이지에서 얻고자 하는 핵심 정보를 정리하여 메인 페이지에서 확인 가능 하도록 배치</b>하였습니다.<br>
+                            브랜드에 대한 짧은 소개와 기본적인 플레이버 및 베스트 셀러를 소개하고 하겐다즈 오프라인 매장을 확인할 수 있는 메인 페이지를 구성하였습니다.
+                        </p>
+                        <!-- 슬릭 슬라이드 autoplay 사용 -->
+                        <div class="indexImgs">
+                            <div><img src="images/sbIndex.svg" alt="하겐다즈이미지01"></div>
+                            <div><img src="images/ccIndex.svg" alt="하겐다즈이미지02"></div>
+                            <div><img src="images/vlIndex.svg" alt="하겐다즈이미지03"></div>
+                            <div><img src="images/gtIndex.svg" alt="하겐다즈이미지04"></div>
+                        </div>
+                    </div>
+                    <!-- aos delay -->
+                    <div class="bannerImgs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <img src="images/vlBanner.svg" alt="바닐라배너">
+                        <img src="images/gtBanner.svg" alt="그린티배너">
+                        <img src="images/sbBanner.svg" alt="스트로베리배너">
+                        <img src="images/bgcBanner.svg" alt="벨지안배너">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
+                        <h4>📍 상품 정보 확인 편의성 확보</h4>
+                        <p>
+                            기존 공식 홈페이지에서는 제품에 대한 정보가 다소 부족해 추가로 자료조사를 하였고, 보완된 정보 전달용 콘텐츠로 재구성하였습니다. <br>
+                            아이스크림의 용량 및 영양정보를 한 눈에 확인할 수 있고 이미지 뿐만 아니라 아이스크림의 텍스쳐도 확인할 수 있어<br>
+                            조금 더 디테일한 부분까지 안내하고 있습니다.
+                        </p>
+                        <p>
+                            또한 <b>반응형에 대응하기 위해 다양한 디바이스에 최적화 된 서비스를 제공할 수 있도록</b> 리사이징 및 콘텐츠를 재정렬 하였고<br>
+                            모바일 특성상 위에서 아래로 스크롤하여 정보를 확인하기 때문에 이미지 밑으로 텍스트를 배치하여<br>
+                            사용자들이 얻고자 하는 정보를 정확하게 알 수 있도록 콘텐츠를 배치했습니다.
+                        </p>
+                        <p>
+                            메뉴 소개 부분에서는 한 페이지에서 여러 종류의 아이스크림을 다양한 사이즈로 확인할 수 있도록 탭 기능으로 구성하였습니다.
+                        </p>
+                        <p><strong>〈 반응형에 대응하여 제작한 메뉴 화면 〉</strong></p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <img src="images/menuBanner.svg" alt="메뉴배너" class="bannershot">
+                    </div>
+                    <h4 class="to-be">🔥 TO-BE</h4>
+                    <p>
+                        상품 상세 페이지에서 구매로 바로 연결되도록 구성하여 사용자가 홈페이지에서 원하는 정보를 얻는 것 뿐만 아니라 제품의 구매로 이어질 수 있도록 구현할 예정입니다.
+                    </p>
+                    <div class="infoWrap wrap01">
+                        <div class="basic">
+                            <h3>Basic Info</h3>
+                            <p>PC &amp; MOBILE</p>
+                        </div>
+                        <div class="workSkills">
+                            <h3># Work Skills</h3>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                    <div class="infoWrap">
+                        <div class="workTools">
+                            <h3># Work Tools</h3>
+                            <span class="tool vscode"></span>
+                            <span class="tool figma"></span>
+                            <span class="tool photoshop"></span>
+                        </div>
+                        <div class="crossBrowsing">
+                            <h3># Cross Browsing</h3>
+                            <span class="cross chrome"></span>
+                            <span class="cross firefox"></span>
+                            <span class="cross edge"></span>
+                            <span class="cross ie"></span>
+                            <span>ie10 , ie11</span>
+                        </div>
+                    </div>
+                    <button type="button" class="proA">WEBSITE</button>
+                </div>
+            </div>
+        </div>
+        <div id="tab02" class="project topicB">
+            <div class="proInfo">
+                <div class="title">
+                    <h3>💡 Project B</h3>
+                    <p>충북 콘텐츠 코리아 랩 홈페이지 리뉴얼</p>
+                </div>
+                <div class="preText">
+                    <div class="num01" data-aos="fade-up" data-aos-duration="2000">
+                        <h4>🔍 기존 홈페이지 분석</h4>
+                        <p>
+                            해당 기관은 충청북도에 귀속된 크리에이터에게 음악/영상/이모티콘/스타트업 지원 등 콘텐츠와 관련된 모든 창작 활동을 지원하는 곳입니다.<br>
+                            그들의 창작 활동을 지원하는 프로그램과 창작 공간, 장비 등이 중요한 정보라고 생각하였으나 이 부분에 대한 접근성이 낮았습니다.<br>
+                            지원 프로그램은 크게 4가지의 카테고리로 구분되어 정보를 탭 구조로 제공하고 있으나 스크롤링과 탭 클릭의 반복으로 약간의 번거로움이 있었습니다.<br>
+                            또한 창작 공간 및 장비에 대한 소개도 안내도 이미지 하단에 테이블로 구현되어 있어 정보를 확인하는 데에 여러번에 스크롤링이 필요로 하는 등 반복 동작에 대한
+                            피로도가
+                            있었습니다.
+                        </p>
+                    </div>
+                    <div class="num02" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>💻 기획의도 및 구현 포인트</h4>
+                        <p>
+                            현재 창작 활동을 진행중인 크리에이터 뿐만 아니라 신규 크리에이터들도 <b>해당 기관에 대해 쉽게 파악할 수 있고 원하는 정보를 보다 더 수월하게 찾을 수 있게
+                                개선하였습니다.</b>
+                        </p>
+                    </div>
+                    <div class="keyword" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>🔑 Keyword</h4>
+                        <div class="keyBox">
+                            <p>#반복 동작에 대한 번거로움 최소화</p>
+                            <p>#정보의 양을 고려한 구현 방식</p>
+                        </div>
+                    </div>
+                    <h4>📍 프로그램에 대한 명확한 정보 제공</h4>
+                    <p>
+                        현재 메인페이지에는 프로그램에 대한 소개가 아닌 신청 카드 배너들이 있는 것으로 확인됩니다.<br>
+                        <b>크리에이터 또는 창작 활동에 관심이 있는 사용자들은 신청 전 어떠한 프로그램이 진행되고 있는지 정보 수집을 필요로 할 것입니다.</b><br>
+                        이러한 점을 메인페이지에 카테고리와 관련된 일러스트 이미지와 함께 간단하게 프로그램에 대한 정보를 제공하였습니다.
+                    </p>
+                    <div class="indexImgs">
+                        <div><img src="images/bIndex01.svg" alt="충북콘랩이미지01"></div>
+                        <div><img src="images/bIndex02.svg" alt="충북콘랩이미지02"></div>
+                        <div><img src="images/bIndex03.svg" alt="충북콘랩이미지03"></div>
+                        <div><img src="images/bIndex04.svg" alt="충북콘랩이미지04"></div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2500" data-aos-delay="600">
+                        <h4>📍 페이지 내에서 정보 확인을 위한 움직임 최소화</h4>
+                        <p>
+                            앞서 홈페이지 분석에서 언급된 바와 같이 프로그램 소개는 정보의 양이 상당히 많아 스크롤과 탭 클릭을 반복하는 것을 최소화하기 위해
+                            스크롤링 시<br> 좌측 컨트롤 리모컨을 통해 사용자가 현재 확인하고 있는 타이틀에 컬러 활성화를 하여 인지하기 쉽게 안내하였습니다.
+                        </p>
+                        <p>
+                            <b>좌측에 배치한 컨트롤 리모컨을 모바일에서는 상단 고정하여 스크롤하여도 언제든지 다른 메뉴를 클릭하여 이동할 수 있게 구성하여<br> 다양한 디바이스에 맞춰
+                                최적화된 서비스를 이용할 수 있도록 반응형을 재구성 하였습니다.</b>
+                        </p>
+                    </div>
+                    <div class="verticalSlide" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="600">
+                        <p><b>화살표를 클릭하여 PC 화면과 모바일 화면을 확인해보세요 😊</b></p>
+                        <div class="controleImgs slider-for">
+                            <div class="slide">
+                                <img src="images/controler01.svg" alt="컨트롤01">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler02.svg" alt="컨트롤02">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler03.svg" alt="컨트롤03">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler04.svg" alt="컨트롤04">
+                            </div>
+                        </div>
+                        <div class="controleImgs slider-nav">
+                            <div class="slide">
+                                <img src="images/controler01.svg" alt="컨트롤01">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler02.svg" alt="컨트롤02">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler03.svg" alt="컨트롤03">
+                            </div>
+                            <div class="slide">
+                                <img src="images/controler04.svg" alt="컨트롤04">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="num03">
+                        <p>
+                            <b>공간 및 장비 소개 페이지도 정보 확인을 위한 움직임을 최소하하기 위해 안내도를 활용</b>하여
+                            해당 공간을 클릭하면<br> 공간에 대한 설명을 모달로 띄워 확인할 수 있도록 구성하였고,
+                            장비는 세 가지 카테고리로 나누어 탭과 테이블로 표현하여<br> 페이지 내에서 별도의 이동 없이 한번에 확인이 가능하도록 구성하였습니다.
+                        </p>
+                        <p>
+                            이 또한 모바일에서는 많은 공간과 장비들을 모달과 테이블로 소개하는 데에 작은 디바이스까지 고려해보니 표현 방법이 적절하지 않다고 생각하여<br> 안내도만 배치 후
+                            이미지
+                            클릭 시
+                            PDF 파일로 정보를 제공하여 작은 디바이스에서도 정보 확인이 수월하도록 개선하였습니다.
+                        </p>
+                    </div>
+                    <div class="modalTableimgs">
+                        <div><img src="images/map01.svg" alt="안내도-모달01"></div>
+                        <div><img src="images/map02.svg" alt="안내도-모달02"></div>
+                        <div><img src="images/map03.svg" alt="안내도-모달03"></div>
+                        <!-- <div><img src="images/table.svg" alt="장비소개-테이블"></div> -->
+                    </div>
+                    <h4 class="to-be">🔥 TO-BE</h4>
+                    <p>
+                        현재 공간 및 장비 소개 페이지는 구현 방법에 의해 '소개'와 '대여'가 별도 메뉴로 나뉘었지만 한 페이지에서 정보 전달과 동시에 사용자가 원하는 공간 및 장비를 바로
+                        예약할 수 있는 신청 폼을 연결하여 보다 더 나은 서비스를 제공할 예정입니다.
+                    </p>
+                    <div class="infoWrap wrap01">
+                        <div class="basic">
+                            <h3>Basic Info</h3>
+                            <p>PC &amp; MOBILE</p>
+                        </div>
+                        <div class="workSkills">
+                            <h3># Work Skills</h3>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                    <div class="infoWrap">
+                        <div class="workTools">
+                            <h3># Work Tools</h3>
+                            <span class="tool vscode"></span>
+                            <span class="tool figma"></span>
+                            <span class="tool photoshop"></span>
+                            <span class="tool ai"></span>
+                        </div>
+                        <div class="crossBrowsing">
+                            <h3># Cross Browsing</h3>
+                            <span class="cross chrome"></span>
+                            <span class="cross firefox"></span>
+                            <span class="cross edge"></span>
+                            <span class="cross ie"></span>
+                            <span>ie9, ie10 , ie11</span>
+                        </div>
+                    </div>
+                    <button type="button" class="proB">WEBSITE</button>
+                    <button type="button" class="probPdf">UI Definition PDF VIEW</button>
+                </div>
+            </div>
+        </div>
+        <div id="tab03" class="project topicC">
+            <div class="proInfo">
+                <div class="title">
+                    <h3>🎫 Project C</h3>
+                    <p>국립한글박물관 홈페이지 리뉴얼</p>
+                </div>
+                <div class="preText">
+                    <div class="num01" data-aos="fade-up" data-aos-duration="2000">
+                        <h4>🔍 기존 홈페이지 분석</h4>
+                        <p>
+                            문화체육관광부 산하에 소속된 정부 기관으로 한글에 관련된 다양한 전시와<br> 문화·학술 행사 및 교육 활동을 진행하고 있고 한글 도서관을 함께 운영하고
+                            있습니다.<br>
+                            다양한 전시 및 행사에 대한 정보와 교육신청 및 대관신청, 박물관 관람 안내 등사용자들이 필요로 하는 정보가 집약된 바로가기 아이콘 등이<br> 슬라이드 하단에
+                            탭으로 구분되어 있어 별도 클릭을 하지 않으면 해당 내용을 알 수 없었습니다.
+                        </p>
+                    </div>
+                    <div class="num02" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>💻 기획의도 및 구현 포인트</h4>
+                        <p>
+                            중요하다고 생각되는 내용들이 탭 구조로 구현되어 수월하게 찾을 수 없었고, 이러한 점을 보완해 사용자들이 놓칠 수 있는 정보를 메인에서 안내하고자 했습니다.
+                        </p>
+                    </div>
+                    <div class="keyword" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>🔑 Keyword</h4>
+                        <div class="keyBox">
+                            <p>#핵심 정보의 세분화</p>
+                            <p>#사용자들을 위한 레이아웃</p>
+                        </div>
+                    </div>
+                    <h4>📍 정보 확인의 편의성을 고려한 콘텐츠 구현 방법</h4>
+                    <p>
+                        전시 및 안내 / 문화·학술 행사 배너 상단에 카테고리 마커를 통해 행사 내용을 명확하게 안내하여<br> 두 가지 탭을 한 개의 슬라이드에서 압축하여 구성하였고,
+                        모바일에 대응하기 위해 이미지를 세로로 재편집한 슬라이드를 제공하여<br> 사용자들이 작은 디바이스에서도 불편함 없이 해당 정보를 확인할 수 있도록 구성하였습니다.
+                    </p>
+                    <div class="indexImgs">
+                        <div><img src="images/slide01.png" alt="국한박슬라이드01"></div>
+                        <div><img src="images/slide02.png" alt="국한박슬라이드02"></div>
+                        <div><img src="images/slide03.png" alt="국한박슬라이드03"></div>
+                        <div><img src="images/slide04.png" alt="국한박슬라이드04"></div>
+                        <div><img src="images/slide05.png" alt="국한박슬라이드05"></div>
+                        <div><img src="images/slide06.png" alt="국한박슬라이드06"></div>
+                    </div>
+                    <div class="num03" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <p>
+                            기존에는 슬라이드 우측에 캘린더가 배치 되어 있었는데, 박물관에 대한 정보를 전달하는 만큼<br> <b>캘린더를 좌측에 배치해 사용자들이 휴관일 / 행사 진행 일정을
+                                먼저 확인할 수 있도록 개선하였습니다.</b>
+                        </p>
+                        <p>
+                            또한 바로가기 아이콘 박스를 기존의 탭 구조가 아닌 하나의 콘텐츠로 구성해 사용자들이 별도로 찾지 않아도 확인할 수 있도록 배치하였습니다.
+                        </p>
+                    </div>
+                    <div class="editImgs" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <img src="images/calendar.svg" alt="캘린더">
+                        <img src="images/shortcut.svg" alt="바로가기" class="shortcut">
+                    </div>
+                    <div class="num04" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                        <h4>📍 사이트맵을 통한 정보 확인 편의성 확보</h4>
+                        <p>
+                            Project A / B와 다른 형태로 구현하고자 내비게이션을 과감히 없앴고, 현재 메인 페이지에 표현된 선과 도형의 깔끔한 느낌에 맞춰<br>
+                            헤더의 디자인을 로고와 메뉴 버튼으로 최소화하고, <b>사이트맵을 추가하여 보다 더 다양한 방법으로 내비게이션을 구현하였습니다.</b>
+                        </p>
+                        <img src="images/sitemap.png" alt="sitemap" class="sitemap">
+                    </div>
+                    <h4 class="to-be">🔥 TO-BE</h4>
+                    <p>
+                        캘린더에 박물관 휴관일과 행사 등을 연동하여 사용자들이 보다 더 편리하게 정보를 확인할 수 있도록 구성할 예정입니다.
+                    </p>
+                    <div class="infoWrap wrap01">
+                        <div class="basic">
+                            <h3>Basic Info</h3>
+                            <p>PC &amp; MOBILE</p>
+                        </div>
+                        <div class="workSkills">
+                            <h3># Work Skills</h3>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                    <div class="infoWrap">
+                        <div class="workTools">
+                            <h3># Work Tools</h3>
+                            <span class="tool vscode"></span>
+                            <span class="tool figma"></span>
+                            <span class="tool photoshop"></span>
+                        </div>
+                        <div class="crossBrowsing">
+                            <h3># Cross Browsing</h3>
+                            <span class="cross chrome"></span>
+                            <span class="cross firefox"></span>
+                            <span class="cross edge"></span>
+                            <span class="cross ie"></span>
+                            <span>ie9 , ie10 , ie11</span>
+                        </div>
+                    </div>
+                    <button type="button" class="proC">WEBSITE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact scroll03">
+        <div class="textBox">
+            <h2>📞 CONTACT</h2>
+            <p>저의 포트폴리오를 봐주셔서 감사합니다 :)</p>
+            <p>아래 번호 또는 이메일로 연락 주신다면 확인 후 빠른 회신 드리겠습니다.
+            </p>
+            <div class="contactInfo">
+                <p><span> phone:</span> 010-8972-7083</p>
+                <p><span> e-mail:</span> najh7083@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            <p>2022 COPYRIGHT ⓒ NA-JIHYUN</p>
+            <p>본 페이지는 학생 포트폴리오로 게시된 홈페이지와 연관이 없음을 알려드립니다.</p>
+        </div>
+    </footer>
+    <div class="top"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
