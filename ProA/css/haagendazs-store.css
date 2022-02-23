@@ -1,0 +1,428 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/* NotoSans KR 폰트 */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.14 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('storeIEstyle.css');
+/* IE cross browsing */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid salmon; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body { min-width: 1280px; }
+
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.inner { 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sec01top { 
+    height: 100px; 
+    background-color: #fff;
+}
+
+.sec01top .inner {
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.sec01top .inner img {
+    margin: 10px 55px 0 0;
+    width: 158px;
+    height: 79px;
+}
+
+.sec01top .inner span { display: none; }
+
+.sec01top .inner .nav { 
+    width: 100%;
+    display: flex;
+}
+
+ul.gnb {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    margin: 0 210px 0 0;
+}
+
+ul.gnb li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ul.gnb li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #444;
+    font-size: 14PX;
+}
+
+ul.gnb li > a:hover {
+    color: #000;
+    border-bottom: 2px solid #671C32;
+    font-weight: 400;
+}
+
+ul.user-menu { 
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+ul.user-menu .insta,
+ul.user-menu .facebook { font-size: 20px; }
+
+ul.user-menu li { margin: 0 10px 0 0; }
+
+ul.user-menu li:last-child { margin: 0; }
+
+.store .store-title {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+}
+
+.store .store-title span:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.store .store-title span:nth-of-type(2) {
+    width: 30%;
+    margin: 0 auto;
+    color: #444;
+    text-align: center;
+    position: relative;
+}
+
+.store .store-title ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.store .store-title ul li { 
+    font-weight: 400; 
+    padding: 0 0 5px 0;
+}
+
+.store .store-title ul li a { font-size: 16px; }
+
+.store .store-title ul li.on {  border-bottom: 3px solid #671C32; }
+
+.store .store-conbox { height: 700px; }
+
+.store .store-conbox .store-conbox-title {
+    text-align: center;
+    margin: 100px auto 0;
+    width: 20%;
+}
+
+.store .store-conbox .store-conbox-title h2 { position: relative; }
+
+.store .conBox { display: none; }
+
+.store .conBox.on { display: block; }
+
+.store .store-conbox .place-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 100px 0 0 0;
+}
+
+.store .store-conbox .place-box .seoul {
+    width: 310px;
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.store .store-conbox .place-box .seoul .seoul-store {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(244, 212, 211, 0.9);
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(130%);
+    z-index: 5;
+}
+
+.store .store-conbox .place-box .seoul .seoul-store.on {
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+.storeSwiper { overflow: hidden; }
+
+.store .store-conbox .place-box .seoul > iframe {
+    width: 310px;
+    height: 310px;
+    border: none;
+}
+
+.store .store-conbox .place-box .seoul h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.store .store-conbox .place-box dt {
+    font-weight: bold;
+    padding: 0 0 0 25px;
+    margin: 0 0 5px 0;
+}
+
+.store .store-conbox .place-box .address { position: relative; }
+
+.store .store-conbox .place-box .address::after {
+    position: absolute;
+    content: "\f3c5";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    color: #671C32;
+    bottom: 0;
+    left: 0;
+}
+
+.store .store-conbox .place-box .tel { position: relative; }
+
+.store .store-conbox .place-box .tel::after {
+    position: absolute;
+    content: "\f879";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    color: #671C32;
+    bottom: 0;
+    left: 0;
+}
+
+.store .store-conbox .place-box .time { position: relative; }
+
+.store .store-conbox .place-box .time::after {
+    position: absolute;
+    content: "\f017";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    color: #671C32;
+    bottom: 0;
+    left: 0;
+}
+
+.store .store-conbox .place-box dd {
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+}
+
+.store .store-conbox .place-box .store-bt {
+    background: #671C32;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+    position: relative;
+    z-index: 10;
+}
+
+.store .store-conbox .place-box .gyeonggi {
+    width: 310px;
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.store .store-conbox .place-box .gyeonggi .gyeonggi-store {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(244, 212, 211, 0.9);
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(130%);
+    z-index: 5;
+}
+
+.store .store-conbox .place-box .gyeonggi .gyeonggi-store.on {
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+.store .store-conbox .place-box .gyeonggi > iframe {
+    width: 310px;
+    height: 310px;
+    border: none;
+}
+
+.store .store-conbox .place-box .gyeonggi h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+/* 하겐다즈 경기 매장 */
+
+.store .store-conbox .place-box .busandaegu {
+    width: 310px;
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.store .store-conbox .place-box .busandaegu .busandaegu-store {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(244, 212, 211, 0.9);
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(130%);
+    z-index: 5;
+}
+
+.store .store-conbox .place-box .busandaegu .busandaegu-store.on {
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+.store .store-conbox .place-box .busandaegu > iframe {
+    width: 310px;
+    height: 310px;
+    border: none;
+}
+
+.store .store-conbox .place-box .busandaegu h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+/* 하겐다즈 부산&대구 매장 */
+
+.store .store-conbox .place-box.b04 {  justify-content: space-evenly; }
+
+.store .store-conbox .place-box .ysanjeju {
+    width: 310px;
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.store .store-conbox .place-box .ysanjeju .ysanjeju-store {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(244, 212, 211, 0.9);
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(130%);
+    z-index: 5;
+}
+
+.store .store-conbox .place-box .ysanjeju .ysanjeju-store.on {
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+.store .store-conbox .place-box .ysanjeju > iframe {
+    width: 310px;
+    height: 310px;
+    border: none;
+}
+
+.store .store-conbox .place-box .ysanjeju h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+/* 하겐다즈 경남&제주 매장 */
+
+footer {
+    height: 180px;
+    background-color: #F0F0F0;
+    font-size: 13px;
+}
+
+footer .inner { display: flex; }
+
+footer .footer-left {
+    width: 50%;
+    height: 180px;
+}
+
+footer .footer-left img { margin: 20px 0 0 0; }
+
+footer .footer-left .hd-info { margin: 10px 0 0 0; }
+
+footer .footer-right {
+    padding: 60px 0 0 40px;
+    width: 50%;
+    height: 180px;
+    display: flex;
+}
+
+footer .footer-right .right-user { 
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+footer .footer-right .user {
+    align-items: center;
+    color: #414141;
+    font-weight: bold;
+}
+
+footer .footer-right .user p:last-child {
+    font-size: 20px;
+    color: #000;
+}
+
+footer .footer-right .shortcut  {
+    border-color: #8686867e;
+    color: #8686867e;
+    background: none;
+    width: 170px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    margin: 40px 0 0 30px;
+}
+
+footer .footer-right .shortcut:hover  {
+    border-color: #999;
+    color: #999;
+}
+/* Footer 영역 */

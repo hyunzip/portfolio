@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* ie 공통 요소 */
+.is-ie .sec02conbox { display: flex!important; }
+
+.is-ie .sec03 .swiper-slide { 
+    display: flex!important;
+    height: 500px;
+}
+
+@media screen and ( max-width: 640px) {
+    
+    .is-ie header { width: 100%; }
+
+    .is-ie .sec01top .inner img { margin: 10px 55px 0 0; }
+
+    .sec02 .mySwiper { background: #fff; }
+
+    .is-ie .swiper-wrapper { height: 720px; }
+
+    .is-ie .sec03 .bestSwiper,
+    .is-ie .sec03 .bestSwiper .swiper-wrapper { height: 500px; }
+
+    .is-ie .sec03 .sec03-right .sec03-right-inner { padding: 35px 0 0 20px!important; }
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.is-ie .sec01top a { color: transparent; }
+
+.is-ie .sec01top ul.gnb a { color: #444; }
+
+.is-ie .sec01top .user-menu a { color :#000; }
+
+.is-ie .brand-history .text-box > .yearb dt::before { left: 190px; }
+
+.is-ie .brand-history .text-box > .yeart dt::before {
+    left: 163px;
+    bottom: 0;
+}

@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.is-ie .brand-history .text-box { display: inline-block!important; }
+
+.is-ie .brand-history .text-box > dl { height: 105px; }

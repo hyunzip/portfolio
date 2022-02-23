@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.is-ie a { color: transparent; }
+
+.is-ie .user-menu a { color: #000; }
+
+.is-ie .store-title a { color: #444; }
+
+.is-ie .store-title span { display: block; }
+
+.is-ie iframe { display: none; }
+
+.is-ie .store .store-conbox .place-box .seoul,
+.is-ie .store .store-conbox .place-box .gyeonggi,
+.is-ie .store .store-conbox .place-box .busandaegu,
+.is-ie .store .store-conbox .place-box .ysanjeju {
+    width: 310px;
+    height: 410px;
+    cursor: pointer;
+}
+
+.is-ie .store .store-conbox .place-box .store-bt { margin: 325px 0 0 0;}
+
+.is-ie .store .store-conbox .place-box .seoul.gyodae {
+    background-image: url('../images/교대점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .seoul.yeoido {
+    background-image: url('../images/여의도점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .seoul.seocho {
+    background-image: url('../images/서초점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .gyeonggi.bundang {
+    background-image: url('../images/분당미금점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .gyeonggi.ajuhospital {
+    background-image: url('../images/아주대map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .gyeonggi.pangyo {
+    background-image: url('../images/판교점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .busandaegu.marincity {
+    background-image: url('../images/마린시티점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .busandaegu.yongho {
+    background-image: url('../images/용호자이점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .busandaegu.daegu {
+    background-image: url('../images/대구신세계점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .ysanjeju.yangsan {
+    background-image: url('../images/양산점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .store .store-conbox .place-box .ysanjeju.jeju {
+    background-image: url('../images/제주점map.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.is-ie .swiper.yj { padding: 0 200px 0; }
+
+@media screen and (max-width:640px) {
+    .is-ie .store .store-conbox .place-box .seoul.gyodae,
+    .is-ie .store .store-conbox .place-box .seoul.yeoido,
+    .is-ie .store .store-conbox .place-box .seoul.seocho,
+    .is-ie .store .store-conbox .place-box .gyeonggi.bundang,
+    .is-ie .store .store-conbox .place-box .gyeonggi.ajuhospital,
+    .is-ie .store .store-conbox .place-box .gyeonggi.pangyo,
+    .is-ie .store .store-conbox .place-box .busandaegu.marincity,
+    .is-ie .store .store-conbox .place-box .busandaegu.yongho,
+    .is-ie .store .store-conbox .place-box .busandaegu.daegu,
+    .is-ie .store .store-conbox .place-box .ysanjeju.yangsan,
+    .is-ie .store .store-conbox .place-box .ysanjeju.jeju {
+        background-position: 50% 50%;
+        background-size: 75%;
+    }
+
+    .is-ie .swiper.yj { padding: 0; }
+}

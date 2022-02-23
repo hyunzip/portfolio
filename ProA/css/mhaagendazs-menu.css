@@ -1,0 +1,674 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('MmenuIEstyle.css');
+
+* { word-break: keep-all; }
+
+body { min-width: 100%; }
+
+.inner { width: 90%; }
+
+.sec01top { 
+    height: 90px; 
+    padding: 0;
+}
+
+.sec01top .inner { 
+    height: 90px;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+
+.sec01top .inner img {
+    margin: 5px auto 0;
+    width: 158px;
+    height: 79px;
+}
+
+.sec01top .inner span { 
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    color: #671C32;
+    font-size: 30px; 
+}
+
+ul.gnb { 
+    width: 100%; 
+    flex-direction: column;
+    height: auto; 
+}
+
+ul.gnb li.bt { 
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: #671C32;
+    font-size: 30px; 
+}
+
+.sec01top .inner .nav { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 20px;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #E1C7BA; 
+    transform: translateX(100%);
+}
+
+.sec01top div.nav.on {
+    transform: translateX(0%);
+    transition: transform 0.7s;
+}
+
+ul.gnb li {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    min-height: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul.gnb li a {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul.gnb > li:first-child > a:hover,
+ul.gnb li a:hover:hover,
+ul.gnb li li a:hover:hover { border-bottom: none; }
+
+.sec01top .inner ul.user-menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 15px;
+    margin: 30px 0 0 0;
+}
+
+.icecream-menu .title ul { width: 100%; }
+
+.pint-conbox {
+    height: 770px;
+    padding: 15px 0 0 0;
+}
+
+.pint-conbox .ice-infocard {
+    padding: 0;
+    flex-direction: column;
+}
+
+.pint-conbox .ice-infocard .menu-left {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+}
+
+.ice-infocard .menu-left-inner {
+    padding: 30px 0 0 0;
+    width: 100%;
+}
+
+.menu-left-inner .ice-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.ice-infocard .menu-left-inner .ice-title span::after { left: -7px; }
+
+.ice-infocard .menu-left-inner .flavor-text {
+    font-size: 15px;
+    text-align: center;
+    padding: 35px 0 0 0;
+}
+
+.ice-infocard .menu-left-inner .menu-info { padding: 0; }
+
+.ice-infocard .menu-left-inner .menu-info .cap { flex-direction: column; }
+
+.ice-infocard .menu-left-inner .menu-info .cap p:first-child {  margin: 40px 0 0 0; }
+
+.ice-infocard .menu-left-inner .menu-info .cap p:last-child { margin: 10px 0 0 0; }
+
+.ice-infocard .menu-left-inner .menu-info .info {
+    overflow-x: auto;
+    padding: 20px 0 0 0;
+}
+
+.ice-infocard .menu-left-inner .etc-info { 
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 0 0;
+}
+
+.pint-conbox .ice-infocard .menu-right-gt {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/그린티파인트m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Green Tea Card */
+
+.ice-infocard .menu-left-inner .ice-title.cookie::after { left: -7px; }
+
+.pint-conbox .ice-infocard .menu-right-cc {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/쿠키크림파인트m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Cookie Cream Card */
+
+.ice-infocard .menu-left-inner .ice-tttle.choco.choco::after { left: -7px; }
+
+.pint-conbox .ice-infocard .menu-right-choco {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/초콜릿파인트m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Chocolate Card */
+
+.ice-infocard .menu-left-inner .ice-title.sb span::after { left: -7px; }
+
+.pint-conbox .ice-infocard .menu-right-sb {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/스트로베리m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Card */
+
+.ice-infocard .menu-left-inner .ice-title.vl span::after { left: -7px; }
+
+.pint-conbox .ice-infocard .menu-right-vl {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/바닐라파인트m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Vanllia Card */
+
+.ice-infocard .menu-left-inner .ice-title.md span::after { left: -7px; }
+
+.pint-conbox .ice-infocard .menu-right-md {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/마카다미아넛파인트m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Macadamia Nut Card */
+
+.ice-infocard .menu-left-inner .ice-title.pb span::after { left: -12px; }
+
+.pint-conbox .ice-infocard .menu-right-pb {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/피넛버터크런치m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Peanut Butter Card */
+
+.ice-infocard .menu-left-inner .ice-title.dc span::after {
+    top: 35px;
+    left: -9px;
+}
+
+.pint-conbox .ice-infocard .menu-right-dc {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/다크초콜릿가나슈m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Dark Choco Card */
+
+.ice-infocard .menu-left-inner .ice-title.sbc span::after { left: -12px; }
+
+.pint-conbox .ice-infocard .menu-right-sbc {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/스트로베리치즈케이크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Cheese Cake Card */
+
+.ice-infocard .menu-left-inner .ice-title.bm span::after {
+    top: 35px;
+    left: -9px;
+}
+
+.pint-conbox .ice-infocard .menu-right-bm {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/브라우니마끼아또m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Brownie Macciato */
+
+.pint-conbox .pint-imgs {
+    width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pint-conbox .pint-imgs img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+} 
+/* Pint Menu */
+
+.mini-conbox .ice-infocard {
+    padding: 0;
+    flex-direction: column;
+}
+
+.mini-conbox .ice-infocard .menu-left {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+}
+
+.mini-conbox .ice-infocard .menu-right-gt-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/그린티미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Green Tea Mini */
+
+.mini-conbox .ice-infocard .menu-right-cc-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/쿠키크림미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Cookie Cream Mini */
+
+.mini-conbox .ice-infocard .menu-right-bgc-m {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/벨지안초코미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Belgian Choco Mini */
+
+.mini-conbox .ice-infocard .menu-right-sb-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/스트로베리미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Mini */
+
+.mini-conbox .ice-infocard .menu-right-vl-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/바닐라미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Vanllia Mini */
+
+.ice-infocard .menu-left-inner .flavor-text br { display: none; }
+
+.mini-conbox .ice-infocard .menu-right-mc-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/마카다미아넛미니m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Macadamia Nut Mini */
+
+.mini-conbox .ice-infocard .menu-right-dc-m {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/다크초콜릿가나슈m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Dark Choco Mini */
+
+.mini-conbox .mini-imgs {
+    width: 80%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mini-conbox .mini-imgs img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+} 
+/* Mini Menu */
+
+.bar-conbox .ice-infocard {
+    padding: 0;
+    flex-direction: column;
+}
+
+.bar-conbox .ice-infocard .menu-left {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+}
+
+.bar-conbox .ice-infocard .menu-right-gt-b {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/그린티스틱m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Green Tea Amond */
+
+.bar-conbox .ice-infocard .menu-right-sb-b {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/스트로베리스틱m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Cream */
+
+.bar-conbox .choco-infocard {
+    padding: 0;
+    flex-direction: column;
+}
+
+.bar-conbox .ice-infocard .menu-right-choco-b {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/초콜릿스틱m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Chocolate Choco Amond */
+
+.bar-conbox .ice-infocard .menu-right-cc-b {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/쿠키크림스틱m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Cookie Cream */
+
+.bar-conbox .ice-infocard .menu-right-vl-b {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/바닐라스틱m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Vanlia Caramel Amond */
+
+.bar-conbox .bar-imgs {
+    width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bar-conbox .bar-imgs img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+} 
+/* stickbar img */
+
+.icecream-menu .bulk-conbox { height: 950px; }
+
+.bulk-conbox .ice-infocard {
+    padding: 0;
+    flex-direction: column;
+}
+
+.bulk-conbox .ice-infocard .menu-left {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+}
+
+.bulk-conbox .ice-infocard .menu-right-vl-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/바닐라벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Vanlia Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-gt-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/그린티벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Green Tea Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-sb-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/스트로베리벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-choco-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/초콜릿벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Chocolate Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-mg-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/망고소르베벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Mango Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-mc-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/마카다미아넛벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Macadamia Nut Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-bgc-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/벨지안초코벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Belgian Choco Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-cc-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/쿠키크림벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Cookie Cream Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-rb-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/라즈베리소르베벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Raspberry Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-lm-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/레몬소르베벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Lemon Bulk */
+
+.ice-infocard .menu-left-inner .ice-title.vcb { font-size: 18px; }
+
+.ice-infocard .menu-left-inner .ice-title.vcb span::after {
+    width: 105%;
+    top: 33px;
+    right: -5px;
+}
+
+.bulk-conbox .ice-infocard .menu-right-vcb-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/바닐라카라멜브라우니벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Vanlia Caramel Brownie */
+
+.menu-left-inner .ice-title.sbc.bk { font-size: 18px; }
+
+.ice-infocard .menu-left-inner .ice-title.sbc.bk span::after {
+    width: 105%;
+    top: 33px;
+    right: -5px;
+}
+
+.bulk-conbox .ice-infocard .menu-right-sbc-bk {
+    width: 100%;
+    height: 310px;
+    background-image: url('../images/스트로베리치즈케이크벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Strawberry Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-tr-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/티라미수벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Tiramisu Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-cf-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/커피벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/* Coffee Bulk */
+
+.bulk-conbox .ice-infocard .menu-right-bb-bk {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/블루베리벌크m-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.bulk-conbox .bulk-imgs {
+    width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bulk-conbox .bulk-imgs img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+} 
+
+footer { 
+    height: 310px;
+    padding: 20px 0 0 0;
+}
+
+footer .inner { flex-direction: column; }
+
+footer .footer-left {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-left .hd-info { display: none; }
+
+footer .footer-right {
+    padding: 18px 0 0 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+footer .footer-right .right-user { 
+    width: 100%; 
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer-right .time {  margin: 24px 0 0 0; }
+
+footer .footer-right .user p:last-child { margin: 15px 0 0 0; }
+
+footer .footer-right .shortcut  {
+    align-self: center;
+    margin: 28px 0 0 0;
+}
+/* Footer 영역 */

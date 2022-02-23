@@ -1,0 +1,275 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/* NotoSans KR 폰트 */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.14 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('../lib/swiper-5.4.5/package/css/swiper.min.css');
+/* Swiper css */
+@import url('../lib/slick-1.8.1/slick/slick.css');
+@import url('../lib/slick-1.8.1/slick/slick-theme.css');
+/* slick css */
+@import url('brandIEstyle.css');
+/* IE crossbrowing */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1psxx solid salmon; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body { min-width: 1280px; }
+
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.inner { 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+:root { --swiper-theme-color: #898989; }
+
+.sec01top { 
+    height: 100px; 
+    background-color: #fff;
+}
+
+.sec01top .inner {
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.sec01top .inner img {
+    margin: 10px 55px 0 0;
+    width: 158px;
+    height: 79px;
+}
+
+.sec01top .inner span { display: none; }
+
+.sec01top .inner .nav { 
+    width: 100%;
+    display: flex;
+}
+
+ul.gnb {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    margin: 0 210px 0 0;
+}
+
+ul.gnb li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ul.gnb li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #444;
+    font-size: 14PX;
+}
+
+ul.gnb li > a:hover {
+    color: #000;
+    border-bottom: 2px solid #671C32;
+    font-weight: 400;
+}
+
+ul.user-menu { 
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+ul.user-menu .insta,
+ul.user-menu .facebook { font-size: 20px; }
+
+ul.user-menu li { margin: 0 10px 0 0; }
+
+ul.user-menu li:last-child { margin: 0; }
+
+.brand-history {
+    height: 800px;
+    position: relative;
+}
+
+.brand-history .inner {
+    position: relative;
+    z-index: 1;
+}
+
+.brand-history::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 350px;
+    background-color: #E0BFBA;
+    left: 0;
+    bottom: 0;
+}
+
+.brand-history .title { padding: 50px 0 0 0; }
+
+.brand-history .title h2 { font-size: 35px; }
+
+.brand-history .title p {
+    padding: 17px 0 16px 58px;
+    color: #5F5F5F;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.brand-history .text-box {
+    display: flex!important;
+    margin: 50px 0 0 0;
+}
+
+.brand-history .text-box dd {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.brand-history .text-box > dl {
+    flex-grow: 1;
+    flex-basis: 33.333%;
+    height: 450px;
+}
+
+.brand-history .text-box > dl.yearb {
+    padding-top: 225px;
+}
+
+.brand-history .text-box > .yearb dt {
+    font-size: 25px;
+    font-weight: bold;
+    height: 52px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.brand-history .text-box > .yearb dt::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background-color: #671C32;
+    bottom: 40px;
+}
+
+.brand-history .text-box .yeart {
+    padding-bottom: 225px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.brand-history .text-box > .yeart dt {
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;   
+    margin: 0;
+    position: relative;
+    transform: translateY(50%)
+}
+
+.brand-history .text-box > .yeart dt span {
+    position: relative;
+    z-index: 5;
+}
+
+.brand-history .text-box > .yeart dt::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 74px;
+    height: 74px;
+    border-radius: 100px;
+    background-color: #671C32;
+}
+
+footer {
+    height: 180px;
+    background-color: #F0F0F0;
+    font-size: 13px;
+}
+
+footer .inner { display: flex; }
+
+footer .footer-left {
+    width: 50%;
+    height: 180px;
+}
+
+footer .footer-left img { margin: 20px 0 0 0; }
+
+footer .footer-left .hd-info { margin: 10px 0 0 0; }
+
+footer .footer-right {
+    padding: 60px 0 0 40px;
+    width: 50%;
+    height: 180px;
+    display: flex;
+}
+
+footer .footer-right .right-user { 
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+}
+
+footer .footer-right .user {
+    align-items: center;
+    color: #414141;
+    font-size: 15px;
+}
+
+footer .footer-right .user p:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+footer .footer-right .shortcut  {
+    border-color: #8686867e;
+    color: #8686867e;
+    background: none;
+    width: 170px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    margin: 40px 0 0 30px;
+}
+
+footer .footer-right .shortcut:hover  {
+    border-color: #999;
+    color: #999;
+}
+/* Footer 영역 */
+

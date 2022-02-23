@@ -1,0 +1,805 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/* NotoSans KR 폰트 */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.14 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('../lib/swiper-5.4.5/package/css/swiper.min.css');
+/* Swiper css */
+@import url('../lib/slick-1.8.1/slick/slick.css');
+@import url('../lib/slick-1.8.1/slick/slick-theme.css');
+/* slick css */
+@import url('IEstyle.css');
+/* IE cross browsing */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid salmon; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body { 
+    min-width: 1280px; 
+    background-color: #F0F0F0;
+}
+
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.inner { 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+:root { --swiper-theme-color: #DBABAF; }
+
+.sec01 {
+    height: 800px;
+    background-image: url('../images/sec01bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec01top {
+    height: 100px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.sec01top:hover,
+.sec01top.on {
+    background-color: #fff;
+    transition: all 0.5s; 
+}
+
+.sec01top:hover .user-menu,
+.sec01top.on .user-menu { display: flex; }
+
+.sec01top .inner {
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.sec01top .inner span,
+ul.gnb li.bt { display: none; }
+
+.sec01top .inner img {
+    margin: 10px 55px 0 0;
+    width: 158px;
+    height: 79px;
+}
+
+.sec01top .inner .nav {
+    width: 100%;
+    display: flex;
+}
+
+ul.gnb {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    margin: 0 210px 0 0;
+}
+
+ul.gnb li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ul.gnb li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #444;
+    font-size: 14PX;
+}
+
+ul.gnb > li > a:hover {
+    color: #000;
+    border-bottom: 2px solid #671C32;
+    font-weight: 400;
+}
+
+ul.gnb li > ul {
+    width: 120%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    top: 60px;
+    left: 43%;
+    transform: translate(-50%, -140px);
+}
+
+ul.gnb li:hover > ul {
+    transform: translate(-50%,80%);
+    transition: all 0.5s;
+    background: #fff;   
+}
+
+ul.gnb li > ul li { margin: 0 25px 0 0; }
+
+ul.gnb li > ul li:last-child,
+ul.user-menu li:last-child { margin: 0; }
+
+ul.gnb li:hover > ul li a:hover { font-weight: bold; }
+
+ul.user-menu {
+    display: none;
+    align-items: center;
+    font-size: 14px;
+}
+
+ul.user-menu .insta,
+ul.user-menu .facebook {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul.user-menu li { margin: 0 10px 0 0; }
+
+.sec01conbox {
+    height: 695px;
+    position: relative;
+    padding: 150px 0 0 0;
+}
+
+.sec01conbox .inner {
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+}
+
+.sec01conbox::before {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 330px;
+    background-color: rgba(222, 168, 163, 0.27);
+    position: absolute;
+    top: 155px;
+    left: 0;
+}
+
+.sec01conbox .brand-title {
+    font-size: 50px;
+    width: 385px;  
+}
+
+.sec01conbox .brand-title::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #858585;
+}
+
+.sec01conbox .brand-title::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #858585;
+}
+
+.sec01conbox .brand-txt01 {
+    padding: 85px 0 0 120px;
+    font-size: 15px;
+    color: #353535;
+
+}
+.sec01conbox .brand-txt02 {
+    padding: 0 0 0 120px;
+    font-size: 15px;
+    color: #353535;
+}
+
+.sec01conbox .brand-txt01 span { font-weight: 600;}
+
+.sec01conbox .brand-title span:first-child { font-weight: 400; }
+
+.sec01conbox .brand-bt {
+    background: none;
+    border: none;
+    width: 160px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #671C32;
+    cursor: pointer;
+    position: absolute;
+    top: 130%;
+    left: 45%;
+}
+
+.sec01conbox .brand-bt:hover { font-weight: 500; }
+
+.sec01conbox .brand-bt span {  display: block; }
+
+.sec01conbox .brand-bt .arrow {
+    width: 160px;
+    height: 12px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.sec01conbox .brand-bt .arrow::after {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(226deg);
+    position: absolute;
+    top: 5px;
+    right: -3px;
+}
+
+/* Section 01 영역 */
+
+.sec02 {
+    height: 700px;
+    padding-top: 43px;
+    background: #fff;
+}
+
+.sec02conbox { display: flex!important; }
+
+.sec02 h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.sec02 .menu-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec02 .menu-left-inner {
+    padding: 47px 0 0 0;
+    width: 600px;
+}
+
+/* Green Tea Banner Start */
+.sec02 .menu-left-inner .ice-title {
+    font-size: 25px;
+    text-align: right;
+    margin: 60px 0 0 0;
+}
+
+.sec02 .menu-left-inner .ice-title span { position: relative; }
+
+.sec02 .menu-left-inner .ice-title span::after {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 5px;
+    position: absolute;
+    background-color: #A5CA95;
+    top: 40px;
+    right: 0;
+}
+
+.sec02 .menu-left-inner .flavor-text {
+    font-size: 15px;
+    text-align: right;
+    padding: 34px 0 0 70px;
+}
+
+.sec02 .menu-left-inner .menu-infocard { padding: 32px 0 0 70px; }
+
+.sec02 .menu-left-inner .menu-infocard .cap { display: flex; }
+
+.sec02 .menu-left-inner .menu-infocard .cap p:first-child {
+    color: #444;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 40px 0 0;
+}
+
+.sec02 .menu-left-inner .menu-infocard .info {
+    display: flex;
+    font-size: 14px;
+    padding: 43px 0 0 0;
+}
+
+.sec02 .menu-left-inner .menu-infocard .info .aa {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.sec02 .menu-left-inner .menu-infocard .info .aa:last-child { margin-right: 0; }
+
+.sec02 .menu-left-inner .menu-infocard .info .aa span {
+    display: block;
+    text-align: center;
+}
+
+.sec02 .menu-left-inner .menu-infocard .info .aa span:first-child { position: relative; }
+
+.sec02 .menu-left-inner .menu-infocard .info .aa span:first-child::after {
+    content: "";
+    display: block;
+    width: 105%;
+    height: 1px;
+    position: absolute;
+    background-color: #c4c4c4;
+    top: 22px;
+    left: 0;
+}
+
+.sec02 .menu-left-inner .menu-infocard .info .aa span:last-child { margin: 3px 0 0 0; }
+
+.sec02 .menu-left-inner .etc-info { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 0 70px;
+}
+
+.sec02 .menu-left-inner .etc-info .size-info .gt { color: #5F9747; }
+
+.sec02 .menu-left-inner .etc-info span:nth-of-type(2) { margin: 0 0 0 5px; }
+
+.sec02 .menu-left-inner .etc-info span:nth-of-type(3),
+.sec02 .menu-left-inner .etc-info span:nth-of-type(4) {
+    font-weight: bolder;
+    margin: 0 0 0 5px;
+}
+
+.sec02 .menu-left-inner .etc-info .order-bt {
+    width: 170px;
+    height: 50px;
+    background: #671C32;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sec02 .menu-right {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec02 .menu-right::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #5F9747;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    z-index: 5;
+}
+
+.sec02 .menu-right-gt-inner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url('../images/그린티파인트.png'), url('../images/그린티파인트-상세.png');
+    background-repeat: no-repeat;
+    background-size: 186px 300px, auto;
+    background-position: 30px 40px, right -250px top 30px;
+    z-index: 10;
+}
+/* Green Tea Flavor Banner */
+
+/* Cookie Cream Banner Start */
+
+.sec02 .menu-left-inner .ice-title.cookie span::after { background-color: #F3E0D0; }
+
+.sec02 .menu-left-inner .etc-info .size-info .cc { color: #866F58; }
+
+.sec02 .menu-right.cookie {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec02 .menu-right.cookie::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #866F58;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    z-index: 5;
+}
+
+.sec02 .menu-right-cc-inner {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-image: url('../images/쿠키크림파인트.png'), url('../images/쿠키크림파인트-상세.png');
+    background-repeat: no-repeat;
+    background-size: 216px 304px, auto;
+    background-position: 30px 40px, right -250px top 30px;
+    z-index: 10;
+}
+/* Cookie Cream Flavor Banner */
+
+/* Macadamia Nut Banner Start */
+
+.sec02 .menu-left-inner .ice-title.md span::after { background-color: #653718; }
+
+.sec02 .menu-left-inner .etc-info .size-info .md { color: #EBD486; }
+
+.sec02 .menu-right.md {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec02 .menu-right.md::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #EBD486;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    z-index: 5;
+}
+
+.sec02 .menu-right-md-inner {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-image: url('../images/마카다미아넛파인트.png'), url('../images/마카다미아넛파인트-상세.png');
+    background-repeat: no-repeat;
+    background-size: 206px 307px, auto;
+    background-position: 30px 40px, right -250px top 30px;
+    z-index: 10;
+}
+/* Macadamia Nut Flavor Banner */
+
+/* Strawberry Banner Start */
+
+.sec02 .menu-left-inner .ice-title.sb span::after { background-color: #E99393; }
+
+.sec02 .menu-left-inner .etc-info .size-info .sb { color: #E06666; }
+
+.sec02 .menu-right.sb {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec02 .menu-right.sb::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #E06666;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    z-index: 5;
+}
+
+.sec02 .menu-right-sb-inner {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-image: url('../images/스트로베리파인트.png'), url('../images/스트로베리파인트-상세.png');
+    background-repeat: no-repeat;
+    background-size: 194px 291px, auto;
+    background-position: 30px 40px, right -250px top 30px;
+    z-index:10;
+}
+/* Strawberry Flavor Banner */
+
+/* Vanllia Banner Start */
+.sec02 .menu-left-inner .ice-title.vl span::after { background-color: #DEBCA0; }
+
+.sec02 .menu-left-inner .etc-info .size-info .vl { color: #FFECB3; }
+
+.sec02 .menu-right.vl {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec02 .menu-right.vl::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #FFECB3;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    z-index: 5;
+}
+
+.sec02 .menu-right-vl-inner {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-image: url('../images/바닐라파인트.png'), url('../images/바닐라파인트-상세.png');
+    background-repeat: no-repeat;
+    background-size: 196px 313px, auto;
+    background-position: 30px 40px, right -250px top 30px;
+    z-index: 10;
+}
+/* Vanllia Flavor Banner */
+/* Section 02 영역 */
+
+.sec03 {
+    height: 500px;
+    display: flex;
+}
+
+.sec03 .bestSwiper {
+    width: 50%;
+    height: 100%;
+}
+
+.sec03 .swiper-slide { 
+    display: flex!important;
+}
+
+.sec03 .sec03-vl-left {
+    width: 100%;
+    height: 500px;
+    background-color: #DEBCA0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec03 .sec03-vl-left .sec03-left-vl-inner {
+    width: 600px;
+    padding: 129px 0 0 0;
+    background-image: url('../images/banner-vl.png'), url('../images/banner-texture-vl.png');
+    background-repeat: no-repeat;
+    background-position: 300px 10px,37px 0;
+}
+
+.sec03 .sec03-vl-left .sec03-left-vl-inner p:first-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec03 .sec03-vl-left .sec03-left-vl-inner h2 {
+    margin: 30px 0 0 10px;
+    color: #FFECB3;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.sec03 .sec03-vl-left .sec03-left-vl-inner p:last-child {
+    margin: 22px 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* Vanllia Banner */
+
+.sec03 .sec03-gt-left {
+    width: 100%;
+    height: 500px;
+    background-color: #A5CA95;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec03 .sec03-gt-left .sec03-left-gt-inner {
+    width: 600px;
+    padding: 129px 0 0 0;
+    background-image: url('../images/banner-gt.png'), url('../images/banner-texture-gt.png');
+    background-repeat: no-repeat;
+    background-position: 300px 10px, 163px 0;
+}
+
+.sec03 .sec03-gt-left .sec03-left-gt-inner p:first-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec03 .sec03-gt-left .sec03-left-gt-inner h2 {
+    margin: 30px 0 0 10px;
+    color: #5F9747;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.sec03 .sec03-gt-left .sec03-left-gt-inner p:last-child {
+    margin: 22px 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* Green Tea Banner */
+
+.sec03 .sec03-sb-left {
+    width: 100%;
+    height: 500px;
+    background-color: #E99393;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec03 .sec03-sb-left .sec03-left-sb-inner {
+    width: 600px;
+    padding: 129px 0 0 0;
+    background-image: url('../images/banner-sb.png'), url('../images/banner-texture-sb.png');
+    background-repeat: no-repeat;
+    background-position: 300px 26px, 168px 0;
+}
+
+.sec03 .sec03-sb-left .sec03-left-sb-inner p:first-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec03 .sec03-sb-left .sec03-left-sb-inner h2 {
+    margin: 30px 0 0 10px;
+    color: #E06666;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.sec03 .sec03-sb-left .sec03-left-sb-inner p:last-child {
+    margin: 22px 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* Strawberry Banner */
+
+.sec03 .sec03-bc-left {
+    width: 100%;
+    height: 500px;
+    background-color: #CC7945;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec03 .sec03-bc-left .sec03-left-bc-inner {
+    width: 600px;
+    padding: 129px 0 0 0;
+    background-image: url('../images/banner-bc.png'), url('../images/banner-bc-texture.png');
+    background-repeat: no-repeat;
+    background-position: 385px 99px, 0 0;
+}
+
+.sec03 .sec03-bc-left .sec03-left-bc-inner p:first-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec03 .sec03-bc-left .sec03-left-bc-inner h2 {
+    margin: 30px 0 0 10px;
+    color: #542C02;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.sec03 .sec03-bc-left .sec03-left-bc-inner p:last-child {
+    margin: 22px 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* Belgian Chocolate Banner */
+
+.sec03 .sec03-right {
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/store_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec03 .sec03-right .sec03-right-inner {
+    padding: 50px 0 0 63px;
+    width: 600px;
+}
+
+.sec03 .sec03-right .sec03-right-inner .store-title {
+    width: 175px;
+    font-size: 35px;
+}
+
+.sec03 .sec03-right .sec03-right-inner .store-title::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+    margin: 0 15px 0 0;
+}
+
+.sec03 .sec03-right .sec03-right-inner P {
+    margin: 12px 0 0 40px;
+    font-weight: bold;
+}
+
+footer {
+    height: 180px;
+    background-color: #F0F0F0;
+    font-size: 13px;
+}
+
+footer .inner { display: flex; }
+
+footer .footer-left {
+    width: 50%;
+    height: 180px;
+}
+
+footer .footer-left img { margin: 20px 0 0 0; }
+
+footer .footer-left .hd-info { margin: 10px 0 0 0; }
+
+footer .footer-right {
+    padding: 60px 0 0 40px;
+    width: 50%;
+    height: 180px;
+    display: flex;
+}
+
+footer .footer-right .right-user { 
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+}
+
+footer .footer-right .user {
+    align-items: center;
+    color: #414141;
+    font-size: 15px;
+}
+
+footer .footer-right .user p:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+footer .footer-right .shortcut  {
+    border-color: #8686867e;
+    color: #8686867e;
+    background: none;
+    width: 170px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    margin: 40px 0 0 30px;
+}
+
+footer .footer-right .shortcut:hover  {
+    border-color: #999;
+    color: #999;
+}
+/* Footer 영역 */

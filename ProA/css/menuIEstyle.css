@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* ie 공통 요소 */
+
+.is-ie a { color: transparent; }
+
+.is-ie .user-menu a { color: #000; }
+
+.is-ie .icecream-menu .title a { color: #444; }
+
+.is-ie .icecream-menu .title span { 
+    width: 175px; 
+    display: block;
+}
+
+.icecream-menu .title span:nth-of-type(2) { width: 130px; }
