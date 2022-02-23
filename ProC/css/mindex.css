@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+* { word-break: keep-all; }
+
+body { min-width: 100%; }
+
+.inner { width: 90%; }
+
+/* Header 영역 */
+
+header,
+header .inner { height: 90px; }
+
+header .logo {
+    margin: 25px 0 0 0;
+}
+header .top,
+header ul.toplink { display: none; }
+
+.sitemap { overflow-y: auto;}
+
+.sitemapInner { width: 100%; }
+
+.sitemap .dep01 {  background: none; }
+
+.sitemap .closeMenu { margin: 63px 12px 0 0; }
+
+.sitemap ul.dep01 li { margin: 0 0 25px 0; }
+.sitemap ul.dep01 li >  a { 
+    float: none;
+    margin: 0;
+    width: 100%;
+    padding: 0 0 15px 25px;
+}
+.sitemap ul.dep02 { 
+    margin: 0;
+    display: none; 
+    width: 100%;
+}
+
+.sitemap ul.dep02 > li { 
+    float: none; 
+    margin: 0 0 10px 0;
+}
+.sitemap ul.dep02 > li a { margin: 0; }
+
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li,
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li:nth-of-type(8), 
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li:nth-of-type(9) { margin: 0 0 10px 0;}
+
+/* Main contents 영역 */
+main { 
+    height: auto;
+    padding: 30px 0 0 0; 
+}
+
+main .conBox01 { height: auto; }
+
+.conBox01 .datepicker { 
+    width: 100%; 
+    height: auto;
+}
+.ui-widget.ui-widget-content { width: 100%; }
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    width: 35%;
+    font-size: 0.9em;
+}
+.conBox01 .calendarBox {
+    float: none;
+    width: 100%;
+    height: 310px;
+}
+.conBox01 .slide { 
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 50px 0 0 0;
+}
+.conBox01 .slide img { width: 100%; }
+
+main .conBox02 { 
+    height: 540px; 
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+.conBox02 .libBanner { display: none; }
+
+.conBox02 .libBanner img { 
+    width: 40%;
+    margin: 0 auto;
+}
+.conBox02 .shortcutBox {
+    width: 100%;
+    height: 525px;
+    float: none;
+    padding: 25px 0 0 0;
+}
+.conBox02 .shortcutBox .shortcut {
+    width: 100%;
+    height: 450px;
+    margin: 20px 0 0 0;
+}
+.conBox02 .shortcutBox .shortcut a {
+    width: 30.3333%;
+    height: 110px;
+    display: block;
+}
+.shortcut img { 
+    display: block;
+    padding: 0; 
+    height: 70%;
+    margin: 5px auto;
+}
+.shortcut p { font-size: 13px; }
+
+main .conBox03 {
+    height: 665px;
+    margin: 30px 0 0 0;
+}
+.conBox03 .noticeBox {
+    width: 100%;
+    height: 310px;
+    float: none;
+}
+
+.conBox03 .noticeBox ul li span.cate { display: none; }
+
+.conBox03 .noticeBox ul li .subj { 
+    width: 75%;
+    font-size: 13px;
+}
+.conBox03 .noticeBox ul li span.date {
+    width: 20%;
+    font-size: 12px;
+    margin: 0 0 0 14px;
+}
+.conBox03 .newsBox { 
+    width: 100%; 
+    height: auto;
+    float: none;
+    margin: 30px 0 0 0;
+}
+.newsBox .newsText { 
+    height: 245px;
+    padding: 0 0 0 10px; 
+}
+.newsBox .newsText h4 {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 0 0 0;
+}
+.newsBox .newsText p.news {
+    width: 100%;
+    padding: 11px 0 0 0;
+    font-size: 13px;
+}
+.newsBox .newsText p.newsdate {
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+.newsBox .newsText p.moreview { width: 100%; }
+
+main .conBox04 {
+    height: auto;
+    margin: 30px 0 0 0;
+}
+.conBox04 .edu {
+    width: 100%;
+    height: auto;
+    float: none;
+}
+.edu .tab {
+    width: 100%;
+    height: 210px;
+    float: none;
+    position: relative;
+    z-index: 0;
+}
+.edu .tab li { 
+    height: 60px;
+    line-height: 60px;
+    border-right: 1px solid #a1a1a1;
+}
+.edu .tabBox {
+    width: 100%;
+    float: none;
+    z-index: 0;
+}
+.conBox04 .bannerBox {
+    width: 100%;
+    height: auto;
+    float: none;
+}
+.bannerBox .donation {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+.bannerBox .donation .donationBox {
+    width: 100%;
+    height: auto;
+    border: 1px solid #444444;
+}
+
+.bannerBox .donation .donationData { padding: 22px 0 0 0; }
+
+.bannerBox .donation .donationData .dataText {
+    float: none;
+    text-align: center;
+}
+.bannerBox .donation .donationData img {
+    float: none;
+    width: 124px;
+    height: 85px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.bannerBox .noti {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 0 0;
+}
+
+.bannerBox .noti .notiBox { height: auto; }
+
+.bannerBox .noti .notiBox img { width: 100%; }
+
+.linkBanner { display: none; }
+
+/* Footer 영역 */
+footer { 
+    height: 260px;
+    margin: 30px 0 0 0; 
+    padding: 15px 0 0 0;
+}
+
+footer .footerList { display: none; }
+
+footer ul li a { font-size: 13px; }
+
+footer .footerBox { 
+    margin: 0;
+    height: auto;
+}
+.footerBox .footerLogo {
+    width: 100%;
+    float: none;
+}
+
+.footerBox .footerLogo img { margin: 0 auto; }
+
+.footerBox .footerText { 
+    float: none;
+    height: auto;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+.footerBox .footerText address { 
+    height: auto;
+}
+.footerBox .footerText p.copy {
+    height: auto;
+    margin: 15px 0 0 0;
+    font-size: 13px;
+}
+.footerBox .sns {
+    height: auto;
+    float: none;
+    text-align: center;
+}
+

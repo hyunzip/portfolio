@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.is-ie .slick-prev, .slick-next {
+    width: auto;
+    height: auto;
+}
+
+.is-ie main { display: block; }
+
+.is-ie .libBanner a,
+.is-ie .linkBanner a,
+.is-ie .footerLogo a { color: transparent; }
+
+.ie9 .sitemap .closeMenu {
+    width: 32px;
+    height: 32px;
+    background: url(../images/close_white.svg);
+    background-size: cover;
+}
+
+.ie9 .sitemap {
+    background: rgba(38,69,113,1)
+}
+
+@media screen and (max-width: 640px) {
+    .ie9 header span.openMenu {
+        width: 32px;
+        height: 32px;
+        background-image: url('../images/menu_open_black.svg');
+        background-repeat: no-repeat;
+    }
+}

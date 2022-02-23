@@ -1,0 +1,727 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* Noto Sanas 폰트 */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.14 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('IEstyle.css');
+/* IE crossbrowzing */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid salmon; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body { min-width: 1200px; }
+
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner { 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header 영역 css */
+header { 
+    position: relative;
+    height: 120px;
+    border-bottom: 1px solid #dddddd;
+}
+header .top { 
+    height: 34px; 
+    background: #474747;
+}
+header ul.toplink {
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    /* margin: 20px 0 0 0; */
+    position: absolute;
+    z-index: 20;
+}
+header ul.toplink li {
+    float: left;
+    width: 84px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 15px 0 0;
+}
+
+header ul.toplink li:last-child { margin: 0; }
+
+header ul.toplink li span { 
+    font-size: 12px; 
+    cursor: pointer;
+    color: #ffffff;
+}
+header ul.toplink li a { 
+    display: inline-block;
+    color: #ffffff;
+}
+
+header .inner:nth-of-type(2) { height: 85px; }
+
+header .logo {
+    width: 168px;
+    height: 46px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(50%);
+    z-index: 20;
+}
+header .logo a,
+header .logo img { 
+    display: block; 
+    color: transparent;
+}
+
+header span.Mopen,
+header span.Mclose { display: none; }
+
+header ul.gnb > li:last-child {
+    width: 24px;
+    height: 24px;
+    margin: 8px 0 0 0;
+}
+header span.openMenu {
+    float: right; 
+    cursor: pointer;
+    font-size: 30px;
+    color: #000000;
+    margin: -11px 0 0 0;
+}
+
+/* sitemap */
+.sitemap {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: radial-gradient( circle farthest-corner at 7.7% 79.8%,  rgba(38,69,113,1) 0%, rgba(107,83,164,1) 90% );
+    z-index: 90;
+}
+
+.sitemap.on { display: block; }
+
+.sitemapInner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.sitemap .dep01 { 
+    width: 100%; 
+    text-align: left;
+    margin: 0 auto 0;
+    padding: 120px 0 0 0;
+    background-image: url('../images/logowhite.png');
+    background-repeat: no-repeat;
+    background-position-y: 5%;
+}
+.sitemap .closeMenu {
+    float: right;
+    margin: 65px -4px 0 0;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+.sitemap ul.dep01 > li > a {
+    display: block;
+    height: 100%;
+    float: left;
+    color: #fff;
+    width: 150px;
+    font-size: 24px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #fff;
+}
+.sitemap ul.dep02 { 
+    float: left; 
+    width: 75%;
+    background: rgba(0,0,0,0.3);
+    margin: 0 0 20px 100px;
+    padding: 35px 30px;
+}
+
+.sitemap ul.dep02 > li {
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li { margin: 0 50px 20px 0; }
+
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li:nth-of-type(8),
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li:nth-of-type(9) { margin: 0 50px 0 0; }
+
+.sitemap ul.dep01 li:nth-of-type(7) > ul.dep02 > li:last-child { margin: 0 0 0 0; }
+
+.sitemap ul.dep02 > li:last-child { margin: 0; }
+
+.sitemap ul.dep02 > li a {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Main 영역 css */
+main {
+    height: 1920px;
+    padding: 30px 0 0 0;
+}
+
+main .conBox01 { height: 358px; }
+
+.conBox01 .calendarBox {
+    display: block;
+    width: 360px;
+    height: 358px;
+    float: left;
+}
+.conBox01 .datepicker {
+    width: 360px;
+    height: 286px;
+    float: left;
+}
+.ui-datepicker {
+    width: 100%;
+    height: 100%;
+}
+
+.ui-datepicker .ui-datepicker-header { height: 15%; }
+
+.ui-datepicker table { height: 85%; }
+
+.ui-datepicker table thead { height: 20%; }
+
+.ui-datepicker td span, 
+.ui-datepicker td a { height: 100%; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, .ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    text-align: center;
+    border: none;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    text-align: center;
+    width: 27%;
+    padding: 5px;
+    border: none;
+}
+.ui-datepicker select.ui-datepicker-year {
+    margin: 0 10px 0 0;
+}
+.conBox01 .calendarBt {
+    width: 100%;
+    height: 42px;
+    float: left;
+    background-color: #bbb;
+    margin: 30px 0 0 0;
+}
+.conBox01 .calendarBt span {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 42px;
+}
+.conBox01 .slide {
+    width: 800px;
+    height: 358px;
+    float: right;
+}
+
+.slick-prev, .slick-next { z-index: 5; }
+
+.slick-prev { left: 5px; }
+.slick-next { right: 5px; }
+.slick-prev::before {
+    content: "\f104";
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: #aaa;
+}
+.slick-next::before {
+    content: "\f105";
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: #aaa;
+}
+
+main .conBox02 {
+    margin: 60px 0 0 0;
+    height: 380px;
+}
+
+.conBox02 h3 { font-size: 20px; }
+
+.conBox02 .libBanner {
+    width: 420px;
+    height: 380px;
+    float: left;
+}
+.conBox02 .libBanner a,
+.conBox02 .libBanner img { display: block; }
+
+.conBox02 .shortcutBox {
+    width: 740px;
+    height: 380px;
+    float: right;
+}
+.conBox02 .shortcutBox .shortcut {
+    width: 100%;
+    height: 320px;
+    margin: 30px 0 0 0;
+}
+.conBox02 .shortcutBox .shortcut a {
+    display: block;
+    width: 146px;
+    height: 158px;
+    border: 1px solid #aaa;
+    float: left;
+    margin: 0 2px 2px 0;
+    color: transparent;
+}
+
+.shortcut img { margin: 15px 0 0 24px; }
+
+.shortcut p { 
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+
+main .conBox03 {
+    margin: 60px 0 0 0;
+    height: 340px;
+}
+main .conBox03 h3 { 
+    position: relative; 
+    font-size: 20px;
+}
+main .conBox03 h3::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #606060;
+    width: 100%;
+    height: 1px;
+    top: 50px;
+    left: 0;
+}
+.conBox03 .noticeBox {
+    width: 680px;
+    height: 340px;
+    float: left;
+}
+.conBox03 .noticeBox ul {
+    width: 100%;
+    height: 230px;
+    margin: 50px 0 0 0;
+}
+.conBox03 .noticeBox ul li {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    display: block;
+    float: left;
+    margin: 0 0 20px 0;
+}
+.conBox03 .noticeBox ul li span.cate {
+    display: block;
+    float: left;    
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 48px 0 0;
+    font-weight: bold;
+}
+
+.conBox03 .noticeBox ul li span.cate.hire { border: 1px solid #378511; }
+
+.conBox03 .noticeBox ul li span.cate.notice { border: 1px solid #CB3737; }
+
+.conBox03 .noticeBox ul li .subj {
+    display: block;
+    float: left;
+    width: 410px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.conBox03 .noticeBox ul li .subj:hover { text-decoration: underline; }
+
+.conBox03 .noticeBox ul li span.date {
+    display: block;
+    float: left;
+    width: 72px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0 0 0 40px;
+}
+.conBox03 .newsBox {
+    width: 450px;
+    height: 340px;
+    float: right;
+}
+.newsBox .newsText {
+    width: 100%;
+    height: 253px;
+    margin: 50px 0 0 0;
+    border: 1px solid #797979;
+    padding: 0 0 0 40px;
+}
+.newsBox .newsText h4 {
+    width: 370px;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    height: 77px;
+    cursor: pointer;
+}
+.newsBox .newsText p.news {
+    width: 370px;
+    height: 65px;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.newsBox .newsText h4:hover,
+.newsBox .newsText p.news:hover,
+.newsBox .newsText p.moreview a:hover { text-decoration: underline; }
+
+.newsBox .newsText p.newsdate {
+    width: 370px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+}
+.newsBox .newsText p.moreview {
+    width: 370px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+.newsBox .newsText p.moreview span.moreicon {  font-size: 10px; }
+
+main .conBox04 {
+    margin: 60px 0 0 0;
+    height: 453px;
+}
+.conBox04 h3 { 
+    font-size: 20px; 
+    margin: 0 0 30px 0;
+}
+.conBox04 .edu {
+    width: 680px;
+    height: 100%;
+    float: left;
+}
+
+.edu .tab {
+    width: 246px;
+    height: 236px;
+    float: left;
+    /* pc */
+    position: absolute;
+    z-index: 10;
+}
+.edu .tab li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    border: 1px solid #a1a1a1; 
+    border-right: none;
+    cursor: pointer;
+}
+.edu .tabBox {
+    width: 435px;
+    height: 393px;
+    float: right;
+    border: 1px solid #a1a1a1;
+    /* pc */
+    position: relative;
+    z-index: 5;
+}
+.edu .tabBoxinner {
+    width: 260px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.edu .tabBoxinner .reservationInfo { margin: 17px 0 0 0; }
+ 
+.edu .tabBoxinner .reservationInfo button {
+    background-color: #3D80BD;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 152px;
+    height: 30px;
+    font-size: 14px;
+} 
+.edu .tabBoxinner .reservationInfo p { 
+    font-size: 14px; 
+    float: right;
+    line-height: 30px;
+    width: 30%;
+}
+.edu .tabBoxinner h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 17px 0 0 0;
+}
+.edu .tabBoxinner .date {
+    font-size: 13px;
+    text-align: center;
+    color: #444444;
+    margin: 17px 0 0 0;
+}
+
+.edu .tabBoxinner .date p:first-child { margin: 0 0 5px 0; }
+
+.edu .tabBoxinner .underbt {
+    width: 170px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #467330;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 15px 0 0 45px;
+}
+/* 한글아 놀자 TabBox */
+
+.edu .tabBoxinner .reservationInfo.con02 {
+    display: block;
+    margin: 17px 0 0 0;
+}
+
+.edu .tabBoxinner.con02 img {
+    width: 260px;
+    height: 160px;
+}
+ 
+.edu .tabBoxinner .reservationInfo.con02 button {
+    background-color: #3D80BD;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+} 
+
+.edu .tabBoxinner .reservationInfo.con02 p { 
+    font-size: 14px; 
+    float: right;
+    line-height: 30px;
+    width: 65%;
+}
+
+.edu .tabBoxinner.con02 h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 17px 0 0 0;
+}
+
+.edu .tabBoxinner.con02 .underbt {
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #467330;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 15px 40px 0 0;
+    float: left;
+}
+
+.edu .tabBoxinner.con02 .underbt:nth-of-type(2) { margin: 15px 0 0 0; }
+
+.edu .tabBox { display: none; }
+
+.edu .tabBox.on {
+    display: block;
+    background-color: #eee;
+}
+
+.edu .tab li.on {  background-color: #eee; }
+
+.conBox04 .bannerBox {
+    width: 450px;
+    height: 453px;
+    float: right;
+}
+
+.bannerBox .donation {
+    width: 100%;
+    height: 209px;
+    margin: 0 0 35px 0;
+}
+
+.bannerBox .donation .donationBox {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #a1a1a1;
+}
+
+.bannerBox .donation .donationData {
+    height: 100%;
+    margin: 0 auto;
+    padding: 32px 45px 0 45px;
+}
+
+.bannerBox .donation .donationData .dataText {
+    float: left;
+    font-size: 14px;
+}
+
+.bannerBox .donation .donationData .dataText h4 { 
+    font-size: 17px; 
+    margin: 0 0 15px 0;
+}
+
+.bannerBox .donation .donationData .dataText p.name { margin: 0 0 5px 0; }
+
+.bannerBox .donation .donationData img {
+    float: right;
+    width: 124px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.bannerBox .noti {
+    width: 100%;
+    height: 209px;
+}
+
+.bannerBox .noti h3 { margin: 0; }
+
+.bannerBox .noti .notiBox { height: 180px; }    
+
+.bannerBox .noti .notiBox img { margin: 15px 0 0 0; }
+
+.linkBanner {
+    height: 90px;
+    margin: 30px 0 0 0;
+}
+
+.linkBanner ul.banner_wrap {
+    padding: 25px 0 0 0;
+}
+
+.linkBanner ul.banner_wrap li {
+    float: left;
+    width: 220px;
+    margin: 0 18px 0 0 ;
+}
+
+
+/* Footer 영역 css */
+footer { 
+    height: 194px;
+    background: #2F2F2F;
+    padding: 34px 0 0 0;
+}
+footer .footerList {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.767); 
+}
+footer ul {
+    width: 100%;
+    float: left;  
+}
+footer ul li {
+    float: left;
+    margin: 0 15px 0 0;
+}
+footer ul li a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+footer ul li a:hover { text-decoration: underline; }
+
+footer ul li:first-child a,
+footer ul li:last-child a {
+    color: #AE1907;
+    text-decoration: underline;
+}
+footer .footerBox {
+    height: 60px;
+    color: #fff;
+    margin: 30px 0 0 0;
+}
+.footerBox .footerLogo {
+    width: 168px;
+    height: 46px;
+    float: left;
+    margin: 7px 240px 0 0;
+}
+.footerBox .footerLogo a,
+.footerBox .footerLogo img { display: block; }
+
+.footerBox .footerText { 
+    float: left;  
+    height: 60px;
+    font-size: 14px;
+}
+.footerBox address {
+    font-style: normal;
+    font-weight: 300;
+}
+.footerBox .sns {
+    height: 30px;
+    float: right;
+    margin: 15px 0 0 0;
+}
+.footerBox .sns a {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+    color: #fff;
+}
+
+.footerBox .sns a:hover { color: #aaa; }
+
+.footerBox .sns span:last-child { margin: 0; }
+

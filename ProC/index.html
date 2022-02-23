@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>국립한글박물관</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="./css/mindex.css">
+
+</head>
+
+<body>
+    <!-- Header 영역 -->
+    <header>
+        <!-- top link 영역 -->
+        <div class="top clearfix">
+            <div class="inner">
+                <ul class="toplink clearfix">
+                    <li><a href="#">한글누리 글꼴</a></li>
+                    <li><a href="#">누리집 안내 지도</a></li>
+                    <li>
+                        <a href="#">Languages</a>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="국립한글박물관 로고">
+                </a>
+            </div>
+            <span class="material-icons-outlined openMenu">menu_open</span>
+            <div class="sitemap">
+                <div class="sitemapInner clearfix">
+                    <span class="material-icons-outlined closeMenu">close</span>
+                    <ul class="dep01 clearfix">
+                        <li class="clearfix">
+                            <a href="#">소개</a>
+                            <ul class="dep02">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">조직 및 업무</a></li>
+                                <li><a href="#">건축물 소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">기관 소개 영상</a></li>
+                                <li><a href="#">박물관 후원회</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">박물관 이용</a>
+                            <ul class="dep02">
+                                <li><a href="#">박물관 이야기</a></li>
+                                <li><a href="#">관림 및 해설 안내</a></li>
+                                <li><a href="#">시설 안내</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">모바일 이용 안내</a></li>
+                                <li><a href="#">일정 전체 보기</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">전시·체험</a>
+                            <ul class="dep02">
+                                <li><a href="#">상설 전시</a></li>
+                                <li><a href="#">기획 전시</a></li>
+                                <li><a href="#">한글놀이터</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">교육·문화행사</a>
+                            <ul class="dep02">
+                                <li><a href="#">교육 신청</a></li>
+                                <li><a href="#">특별 강연</a></li>
+                                <li><a href="#">문화 행사</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">조사·연구</a>
+                            <ul class="dep02">
+                            <li><a href="#">학술 연구</a></li>
+                            <li><a href="#">발간 자료</a></li>
+                            <li><a href="#">학술 행사</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix">
+                            <a href="#">소장 자료</a>
+                            <ul class="dep02">
+                                <li><a href="#">소장 자료</a></li>
+                                <li><a href="#">기증/구입</a></li>
+                                <li><a href="#">한글도서관</a></li>
+                            </ul>
+                        </li>
+                        <li class="clearfix"> 
+                            <a href="#">열린 마당</a>
+                            <ul class="dep02">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">일반공고</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">촬영 신청</a></li>
+                                <li><a href="#">소식지</a></li>
+                                <li><a href="#">정보 공개</a></li>
+                                <li><a href="#">공공데이터 개방</a></li>
+                                <li><a href="#">전자민원</a></li>
+                                <li><a href="#">분실물 정보알림</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 컨텐츠 영역 -->
+    <main>
+        <div class="inner clearfix">
+            <div class="conBox01">
+                <!-- 캘린더 -->
+                <div class="calendarBox">
+                    <div class="datepicker"></div>
+                    <div class="calendarBt">
+                        <a href="#">
+                            <span>일정 전체보기</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 전시·안내 및 문화·학술 행사 이미지 슬라이드 -->
+                <div class="slide">
+                    <div><img src="images/slide01.png" alt="슬라이드01" class="slide01"></div>
+                    <div><img src="images/slide02.png" alt="슬라이드02" class="slide02"></div>
+                    <div><img src="images/slide03.png" alt="슬라이드03" class="slide03"></div>
+                    <div><img src="images/slide04.png" alt="슬라이드04" class="slide04"></div>
+                    <div><img src="images/slide05.png" alt="슬라이드05" class="slide05"></div>
+                    <div><img src="images/slide06.png" alt="슬라이드06" class="slide06"></div>
+                </div>
+            </div>
+            <div class="conBox02">
+                <!-- 한글 도서관 배너 -->
+                <div class="libBanner">
+                    <a href="#">
+                        <img src="images/libBanner.png" alt="한글도서관 배너">
+                    </a>
+                </div>
+                <!-- 바로가기 영역 -->
+                <div class="shortcutBox">
+                    <h3>바로가기</h3>
+                    <div class="shortcut">
+                        <a href="#">
+                            <img src="images/shortcut01.png" alt="단체예약">
+                            <p>단체예약</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut02.png" alt="교육신청">
+                            <p>교육신청</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut03.png" alt="문화행사">
+                            <p>문화행사</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut04.png" alt="학술행사">
+                            <p>학술행사</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut05.png" alt="대관신청">
+                            <p>대관신청</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut06.png" alt="찾아오시는 길">
+                            <p>찾아오시는 길</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut07.png" alt="관람안내">
+                            <p>관람안내</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut08.png" alt="한글놀이터">
+                            <p>한글놀이터</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut09.png" alt="자원봉사">
+                            <p>자원봉사</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/shortcut10.png" alt="온라인 소식지">
+                            <p>온라인 소식지</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="conBox03">
+                <!-- 공지사항 -->
+                <div class="noticeBox">
+                    <h3>공지사항</h3>
+                    <ul>
+                        <li>
+                            <span class="cate hire">채용공고</span>
+                            <a href="#" class="subj">
+                                국립한글박물관 공무직 근로자 추가 합격자 공고(전시해설(영어))
+                            </a>
+                            <span class="date">2022.01.27</span>
+                        </li>
+                        <li>
+                            <span class="cate hire">채용공고</span>
+                            <a href="#" class="subj">
+                                국립한글박물관 공무직 근로자(전시해설(영어)) 최종합격자 공고
+                            </a>
+                            <span class="date">2022.01.26</span>
+                        </li>
+                        <li>
+                            <span class="cate notice">공지사항</span>
+                            <a href="#" class="subj">
+                                2022년 설 연휴 박물관 휴관일 및 운영일 안내
+                            </a>
+                            <span class="date">2022.01.24</span>
+                        </li>
+                        <li>
+                            <span class="cate hire">채용공고</span>
+                            <a href="#" class="subj">
+                                국립한글박물관 전시운영과 공무직 근로자(전시기획) 채용 공고
+                            </a>
+                            <span class="date">2022.01.24</span>
+                        </li>
+                        <li>
+                            <span class="cate hire">채용공고</span>
+                            <a href="#" class="subj">
+                                국립한글박물관 전시운영과 공무직 근로자(전시영상디자인) 채용 공고
+                            </a>
+                            <span class="date">2022.01.24</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="newsBox">
+                    <!-- 보도자료 -->
+                    <h3>보도자료</h3>
+                    <div class="newsText">
+                        <h4 class="nTitle">
+                            국립한글박물관 상설전시실 개편 개관 - 개관 8주년 맞아 새로운 상설전시 〈훈민정음, 천년의 문자 계획〉개최
+                        </h4>
+                        <p class="news">
+                            국립한글박물관(관장 황준석)은 2022년 1월 21일부터 새로운 상설전시 〈훈민정음, 천년의 문자 계획〉을 개최한다. 2014년 10월 9일 한글날에 개관한
+                            국립한글박물관은 개관 8년 차를 맞아, 상설전시실을 전면 개편했다.
+                        </p>
+                        <p class="newsdate">2022-01-20</p>
+                        <p class="moreview">
+                            <a href="#">
+                                자세히 보기
+                                <span class="material-icons-outlined moreicon">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="conBox04">
+                <div class="edu">
+                    <h3>교육안내</h3>
+                    <div class="tab">
+                        <ul>
+                            <li data-id="tab01" class="on">한글아 놀자!</li>
+                            <li data-id="tab02">[겨울방학 교육] 신비한 이야기꾼</li>
+                            <li data-id="tab03">[겨울방학 교육] 전설의 이야기꾼</li>
+                        </ul>
+                    </div>
+                    <div id="tab01" class="tabBox on">
+                        <div class="tabBoxinner">
+                            <img src="images/eduthumb01.jpg" alt="한글아놀자">
+                            <div class="reservationInfo">
+                                <button type="button">한글놀이터 단체예약</button>
+                                <p>유아 단체</p>
+                            </div>
+                            <h4>한글아 놀자!</h4>
+                            <div class="date">
+                                <p>신청기간: 2022-01-07 ~ 2022-03-31</p>
+                                <p>교육기관: 2022-01-11 ~ 2022-03-31</p>
+                            </div>
+                            <button type="button" class="underbt">교육신청</button>
+                        </div>
+                    </div>
+                    <div id="tab02" class="tabBox">
+                        <div class="tabBoxinner con02 clearfix">
+                            <img src="images/eduthumb02.jpg" alt="신바한이야기꾼">
+                            <div class="reservationInfo con02">
+                                <button type="button" class="con02">유아</button>
+                                <p class="info">7~9세 어린이 동반 가족(2021년 기준)</p>
+                            </div>
+                            <h4>[겨울방학 교육] 신비한 이야기꾼</h4>
+                            <div class="date">
+                                <p>신청기간: 2022-12-17 ~ 2022-01-25</p>
+                                <p>교육기관: 2022-01-05 ~ 2022-03-31</p>
+                            </div>
+                            <button type="button" class="underbt">10시 교육신청</button>
+                            <button type="button" class="underbt">11시 교육신청</button>
+                        </div>
+                    </div>
+                    <div id="tab03" class="tabBox">
+                        <div class="tabBoxinner con02 clearfix">
+                            <img src="images/eduthumb03.jpg" alt="전설의이야기꾼">
+                            <div class="reservationInfo con02">
+                                <button type="button" class="con02">유아</button>
+                                <p class="info">7~9세 어린이 동반 가족(2021년 기준)</p>
+                            </div>
+                            <h4>[겨울방학 교육] 전설의 이야기꾼</h4>
+                            <div class="date">
+                                <p>신청기간: 2022-12-17 ~ 2022-01-21</p>
+                                <p>교육기관: 2022-01-04 ~ 2022-01-25</p>
+                            </div>
+                            <button type="button" class="underbt">10시 교육신청</button>
+                            <button type="button" class="underbt">11시 교육신청</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bannerBox">
+                    <div class="donation">
+                        <h3>기증자료</h3>
+                        <div class="donationBox">
+                            <div class="donationData">
+                                <div class="dataText">
+                                    <h4>한글의 바른길(최현배,1948)</h4>
+                                    <p class="name">기증자: 성낙수</p>
+                                    <p class="donationDate">2015-12-02</p>
+                                </div>
+                                <img src="images/donationData01.jpg" alt="기증자료01">
+                            </div>
+                            <div class="donationData">
+                                <div class="dataText">
+                                    <h4>행복이 가득한 집 원도(김진평)</h4>
+                                    <p class="name">기증자: 이화복</p>
+                                    <p class="donationDate">2015-12-02</p>
+                                </div>
+                                <img src="images/donationData02.jpg" alt="기증자료02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="noti">
+                        <h3>알림</h3>
+                        <div class="notiBox">
+                            <img src="images/noti01.png" alt="코로나배너">
+                            <img src="images/noti02.png" alt="문화가있는날 배너">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linkBanner">
+                <ul class="banner_wrap clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner01.png" alt="문체부배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner02.png" alt="국립국어원배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner03.png" alt="누리한글놀이터배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner04.png" alt="박물관소식지배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner05.png" alt="디지털한글박물관배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner06.png" alt="한글도서관배너">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rollingbanner07.jpg" alt="한글꼴큰사전">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Footer 영역 -->
+    <footer>
+        <div class="inner clearfix">
+            <div class="footerList">
+                <ul class="clearfix">
+                    <li class="clearfix"><a href="#">개인정보처리방침</a></li>
+                    <li class="clearfix"><a href="#">저작권 정책</a></li>
+                    <li class="clearfix"><a href="#">영상정보처리기기 운영관리 방침</a></li>
+                    <li class="clearfix"><a href="#">이용약관</a></li>
+                    <li class="clearfix"><a href="#">청백리 지킴이 방</a></li>
+                    <li class="clearfix"><a href="#">찾아오시는 길</a></li>
+                    <li class="clearfix"><a href="#">RSS 서비스</a></li>
+                    <li class="clearfix"><a href="#">자주하는 질문</a></li>
+                    <li class="clearfix"><a href="#">사전정보공표</a></li>
+                </ul>
+            </div>
+            <div class="footerBox">
+                <div class="footerLogo">
+                    <a href="index.html">
+                        <img src="images/footerlogo.png" alt="국립한글박물관 로고">
+                    </a>
+                </div>
+                <div class="footerText">
+                    <address>
+                        04383 서울시 용산구 서빙고로 139 국립한글박물관<br>
+                        대표전화 02-2124-6200, 단체 관람 02-2124-6203
+                    </address>
+                    <p class="copy">
+                        Copyright © National Hangeul Museum. All rights reserved
+                    </p>
+                </div>
+                <div class="sns">
+                    <a href="#">
+                        <span class="fab fa-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fab fa-instagram"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fab fa-youtube"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/IE-Checker/ie-checker-min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
