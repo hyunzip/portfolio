@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+* { word-break: keep-all; }
+
+body { min-width: 100%; }
+
+.inner { width: 90%; }
+
+.vegas-content { padding: 0;}
+
+/* Header */
+header { 
+    height: 470px;
+    padding: 15px 0 0 0;
+}
+
+header .topmenu::after {
+    width: unset;
+    height: unset;
+    background-color: transparent;
+    position: relative;
+    left: unset;
+    top: unset;
+    transition: unset;
+    z-index: unset
+}
+
+header .topmenu:hover::after {
+    height: unset;
+    transition: unset;
+}
+
+header .topmenu { width: 100%; }
+
+header .topmenu a.logo {
+    width: 80%;
+    height: 60px;
+    background-position: 10% 50%;
+}
+
+header .topmenu span.Mopen { 
+    display: block; 
+    align-self: flex-start;
+    padding: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+header .topmenu span.Mclose {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    height: 75px;
+    text-align: right;
+}
+
+header .topmenu nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
+    padding: 30px 0 0;
+    transform: translateX(100%);
+}
+
+header .topmenu nav.on {
+    transform: translateX(0%);
+    transition: transform 0.7s;
+}
+
+header .topmenu ul.gnb {
+    width: 100%;
+    line-height: 75px;
+    flex-direction: column;
+}
+
+header .topmenu .gnb > li a {
+    color: #000;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 10px;
+    line-height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #777;
+}
+.gnb li .submenu > li {
+    background-color: #DDE2E5;
+    padding: 10px 22px;
+}
+
+.gnb li .submenu > li a {
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+    font-weight: 400;
+    border-bottom: unset;
+}
+
+header .topmenu .gnb > li span { display: none; }
+
+header .intro .textBox .engtitle { width: 200%; }
+
+header .intro {
+    height: 368px;
+    padding: 50px 0 0 0;
+}
+
+header .intro .textBox h1 {
+    width: 100%;
+    font-size: 25px;
+}
+
+header .intro .textBox .subtext  {
+    width: 100%;
+    font-size: 14px;
+}
+
+header .intro .textBox h1::after { width: 78%; }
+
+header .intro .textBox,
+header .intro .textBox .engtitle { width: 100%; }
+
+header .intro .bottom  {
+    width: 100%;
+    height: 90px;
+    min-width: 200px;
+    background-color: transparent;
+    float: unset;
+    margin: 30px 0 0 0;
+}
+
+header .intro .bottom .timeBox { width: 100%; }
+
+header .intro .bottom .timeBox h3 { font-size: 17px; }
+
+header .intro .bottom .reservationBox { display: none; }
+
+/* Section01 영역 */
+.section01 { 
+    height: auto; 
+    padding: 20px 0 0 0;
+}
+
+.section01 .titleBox { flex-direction: column; }
+
+.section01 .titleBox .title { 
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section01 .titleBox .title-sub {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.section01 .sec01Box { height: auto; }
+
+.section01 .sec01Box ul {
+    justify-content: unset;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section01 .sec01Box ul li { margin: 0 0 10px 0; }
+
+.section01 .sec01Box ul li button { 
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Section01 tabBox 공통 요소 */
+.tabBox .tabBox-textBox { height: auto;}
+
+.tabBox .tabBox-textBox .tabBox-title { display: none; }
+
+.tabBox .tabBox-textBox .tabBox-text {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 0 15px;
+}
+
+.tabBox .tabBox-textBox .tabBox-text h3 { font-size: 15px; }
+
+.tabBox .tabBox-textBox .tabBox-text p {
+    margin: 0 0 15px 0;
+    padding: 5px 0 0 15px;
+}
+
+.tabBox .tabBox-textBox .tabBox-text p br { display: none; }
+
+/* Section01 content promote */
+.sec01Box .tabBox.contents.conBox { 
+    height: auto;
+    background: none;
+}
+
+/* Section01 business */
+.sec01Box .tabBox.business.conBox { 
+    height: 360px;
+    background: none;
+}
+
+/* Section01 local promotion */
+.sec01Box .tabBox.local.conBox { 
+    height: 360px;
+    background: none;
+}
+
+/* Section01 equipment */
+.sec01Box .tabBox.equipment.conBox { 
+    height: 360px;
+    background: none;
+}
+
+/* Section02 영역 */
+.section02 { 
+    height: 780px;
+    padding: 20px 0 0 0;
+    background-image: none;
+}
+
+.section02 .titleBox {
+    flex-direction: column;
+    justify-self: unset;
+}
+
+.section02 .titleBox .title-sub {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin: 0;
+}
+
+.section02 .titleBox .title {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.section02 .sec02Box ul { flex-direction: column;}
+
+.section02 .sec02Box li { flex-direction: column;}
+
+.section02 .sec02Box .title {
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    justify-content: center;
+}
+
+.section02 .sec02Box .title span:last-child { margin: 0;}
+
+.section02 .sec02Box .content {
+    width: 100%;
+    display: flex;
+    flex-flow: unset;
+    flex-direction: column;
+    padding: 5px;
+    white-space: unset;
+    height: 40vh;
+}
+
+/* Sec02box startup office tab */
+.sec02Box .content dl,
+.sec02Box li:last-child .content dl { width: 100%; }
+
+.sec02Box .content.startup dl:first-child { padding: 15px 5px 5px 5px; }
+
+.sec02Box .content.startup dl:first-child dt::after { width: 80%; }
+
+.sec02Box .content.startup dl:nth-of-type(2),
+.sec02Box .content.startup dl:nth-of-type(4),
+.sec02Box .content.startup dl:nth-of-type(6) { padding: 15px; }
+
+.sec02Box .content.startup dl:nth-of-type(2) dd { font-size: 13px; }
+
+.sec02Box .content.startup dl:nth-of-type(3) { padding: 10px; } 
+
+.sec02Box .content.startup dl:nth-of-type(4) dd {
+    padding: 5px 0 0 30px;
+    font-size: 13px;
+}
+
+.sec02Box .content.startup dl:nth-of-type(5) { padding: 10px; }
+
+.sec02Box .content.startup dl:nth-of-type(5) dd {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+}
+
+.sec02Box .content.startup dl:nth-of-type(6) dd { font-size: 14px; }
+
+/* sec02Box studio tab */
+.sec02Box .content.studio dl:first-child { padding: 15px 0 0 15px; }
+
+.sec02Box .content.studio dl:nth-of-type(2),
+.sec02Box .content.studio dl:nth-of-type(3),
+.sec02Box .content.studio dl:nth-of-type(4),
+.sec02Box .content.studio dl:nth-of-type(5),
+.sec02Box .content.studio dl:nth-of-type(6),
+.sec02Box .content.studio dl:nth-of-type(7) { padding: 25px 0 0 15px; }
+
+.sec02Box .content.studio dl:first-child dt::after,
+.sec02Box .content.studio dl:nth-of-type(2) dt::after,
+.sec02Box .content.studio dl:nth-of-type(3) dt::after,
+.sec02Box .content.studio dl:nth-of-type(4) dt::after,
+.sec02Box .content.studio dl:nth-of-type(5) dt::after,
+.sec02Box .content.studio dl:nth-of-type(6) dt::after {  width: 40%; }
+
+.sec02Box .content.studio dl:nth-of-type(7) dt::after { width: 45%; }
+
+/* sec02Box romms tab */
+.section02 .sec02Box .content.rooms dl dd { font-size: 13px; }
+
+.sec02Box .content.rooms dl:first-child { padding: 15px 0 0 0; }
+
+.sec02Box .content.rooms dl:first-child dt { padding: 0 0 0 10px; }
+
+/* Section03 영역 */
+.section03 { height: auto; }
+
+.section03 .inner { 
+    width: 95%;
+    flex-direction: column; 
+}
+
+.section03 .left,
+.section03 .right { width: 100%; }
+
+.section03 .left h2 { 
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+}
+
+.section03 .left h2::after {
+    width: 90%;
+    left: 15px;
+    bottom: -10px;
+}
+
+.section03 .left table { 
+    margin: 20px 0 0 0; 
+    width: 100%;
+}
+
+.section03 .left .main-news thead th.category { display: none; }
+
+.section03 .left .main-news td.category { display: none; }
+
+.section03 .left .main-news td.subj { max-width: 229px; }
+
+.section03 .right h2 {
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+}
+
+.section03 .right p {
+    font-size: 14px;
+    padding: 5px 0 0 20px;
+}
+
+.section03 .right .imgbox {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0 0;
+}
+
+.section03 .right .imgbox img { width: 30%; }
+
+footer {  height: 170px; }
+
+footer ul.list { justify-content: space-between; }
+
+footer ul.list li { 
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .address { font-size: 14px; }
+

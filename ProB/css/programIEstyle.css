@@ -1,0 +1,345 @@
+@charset "UTF-8";
+.is-ie header{
+    position: relative;
+    z-index: 10;
+}
+.is-ie header .topmenu,
+.is-ie header .intro .textBox { display: block; }
+
+.is-ie header .topmenu nav {
+    display: block;
+    float: right;
+}
+
+.is-ie header .topmenu a.logo { float: left; }
+
+.is-ie .sub01section .scrolltext{ display: none; }
+.is-ie .conbox02 .startup .b01-textBox02 dl { width: 14%; }
+
+.is-ie .conbox02 .next .b01-textBox02 .next.process { width: 70%; }
+
+.is-ie .conbox02 .next .b01-textBox02 dl { width: 30%; }
+
+.is-ie .startup.b01-textBox01 .spBox .tabBox01 .spTextBox .spText {
+    float: left;
+    width: 434px;
+    height: 220px;
+    padding: 40px 0 0 0;
+}
+.is-ie .startup.b01-textBox01 .spBox .tabBox01:nth-of-type(3) .spTextBox .spText {
+    padding: 60px 0 0 0;
+}
+
+
+/* ie9 */
+.ie9 .clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* Header */
+.ie9 header .topmenu,
+.ie9 header .intro .textBox { display: block; }
+
+.ie9 header .topmenu a.logo,
+.ie9 header .topmenu .gnb > li { float: left; }
+
+.ie9 header .topmenu nav {
+    display: block;
+    float: right;
+}
+.ie9 header .topmenu ul.gnb {
+    display: block;
+    float: left;
+}
+
+.ie9 .conbox02 .b01-textBox02 .process,
+.ie9 .conbox04 .b01-textBox02 .process {
+    float: left;
+    width: 100%;
+}
+
+.ie9 .conbox02 .b01-textBox02 dl,
+.ie9 .conbox04 .b01-textBox02 dl { float: left; }
+
+/* 프로세스 화살표 span */
+.ie9 .conbox02 .b01-textBox02 span,
+.ie9 .conbox03 .b01-textBox02 span,
+.ie9 .conbox04 .b01-textBox02 span {
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/ep_arrow-right.svg);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.ie9 .conbox02 .kick .b01-textBox02 span,
+.ie9 .conbox02 .branding .b01-textBox02 span,
+.ie9 .conbox02 .startup .b01-textBox02 span,
+.ie9 .conbox02 .mento .b01-textBox02 span,
+.ie9 .conbox02 .office-support .b01-textBox02 span,
+.ie9 .conbox02 .translation .b01-textBox02 span,
+.ie9 .conbox02 .local .b01-textBox02 span,
+.ie9 .conbox04 .makeitcon .b01-textBox02 span { margin: 42px 0 0 0; }
+
+.ie9 .conbox03 .academy .b01-textBox02 span { margin: 66px 0 0 0; }
+
+.ie9 .conbox03 .spotlight .b01-textBox02 span { margin: 42px 5px 0 5px; }
+/* 프로세스 화살표 span */
+
+.ie9 .conbox02 .next .b01-textBox01 .nextBoxs .nextBox01, 
+.ie9 .conbox02 .next .b01-textBox01 .nextBoxs .nextBox02 { float: left; }
+
+.ie9 .conbox02 .next .b01-textBox01 dl { 
+    height: 125px;
+    padding: 23px 0 0 0;
+}
+
+.ie9 .conbox02 .next .b01-textBox01 dd { padding: 35px 0 0 0; }
+.ie9 .conbox02 .next .b01-textBox01 dt { float: left; }
+.ie9 .conbox02 .next .b01-textBox02 span { margin: 62px 8px 8px 8px; }
+
+.ie9 .startup.b01-textBox01 .spBox .tab { padding: 0 0 0 340px; }
+.ie9 .startup.b01-textBox01 .spBox .tab li { float: left; }
+.ie9 .startup.b01-textBox01 .spBox .tabBox01 .spTextBox .spTitle {
+    width: 70px;
+    height: 220px;
+    padding: 65px 0 0 0;
+    float: left;
+}
+.ie9 .startup.b01-textBox01 .spBox .tabBox01 .spTextBox { padding: 0 0 0 385px; }
+.ie9 .spBox .tabBox01 .spText02 { padding: 0 0 0 420px; }
+.ie9 .spBox .tabBox01 .spText02 li { float: left; }
+
+.ie9 .conbox02 .translation .translationBox01 { padding: 10px 0;}
+.ie9 .conbox02 .translation .translationBox01 h5 { 
+    float: left; 
+    margin: 30px 0 0 0; 
+}
+.ie9 .conbox02 .translation div.translationBox01:nth-of-type(2) h5 { margin: 60px 0 0 0; }
+.ie9 .conbox02 .translation .translationBox01 ul {
+    width: 60%;
+    margin: 20px 0 20px 130px;
+}
+
+.ie9 .conbox02 .local .localBox dt { float: left; }
+.ie9 .conbox02 .local .b01-textBox01 dd { 
+    height: 75px;
+    padding: 5px 0 0 0;
+}
+
+.ie9 .conbox03 .b01-textBox01 .list dt { float: left; }
+.ie9 .conbox03 .b01-textBox01 .list dd { margin: 0 0 0 50px; }
+
+.ie9 .conbox03 .b01-textBox02 .process {
+    float: left;
+    width: 100%;
+}
+
+.ie9 .conbox03 .b01-textBox02 dl { 
+    float: left; 
+    width: 20%;
+}
+
+.ie9 .conbox03 .luxuryclass .b01-textBox01 dd { padding: 0; }
+
+.ie9 .conbox04 .b01-textBox01 .masteringBox dl { height: 80px; }
+.ie9 .conbox04 .b01-textBox01 .masteringBox dl:nth-of-type(3) dd { padding: 15px 0 0 0; }
+.ie9 .conbox04 .b01-textBox01 .masteringBox dt { float: left; }
+.ie9 .conbox04 .b01-textBox01 .masteringBox dd {
+    height: 80px;
+    padding: 30px 0 0 0;
+}
+
+.ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 { height: 60px; }
+.ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 h5 { float: left; }
+.ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 ul { padding: 5px 0 0 0; }
+
+.ie9 footer ul.sns { 
+    text-align: center;
+     padding: 20px 0 0 0;
+}
+.ie9 footer ul.sns li { display: inline-block; }
+.ie9 footer ul.list {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.ie9 footer ul.list li { display: inline-block;}
+
+
+@media screen and (max-width: 767px) {
+
+    /* 퀵메뉴 */
+    .is-ie .side-quikmenu { left: 0; }
+
+    .is-ie .conbox02 .next .b01-textBox02 .next.process { width: 100%; }
+
+    .is-ie .conbox02 .next .b01-textBox02 dl { width: 50%; }
+
+    .is-ie .b01-textBox01.startup .spBox :nth-of-type(3).tabBox01 .spTextBox .spText { padding: 17px 0 0 0; }
+    .is-ie .conbox02 .startup .b01-textBox02 dl { width: 40%; }
+    .is-ie .conbox02 .startup .b01-textBox01 .spBox .tab li { width: 29%; }
+    .is-ie .spBox .tabBox01 .spText02 li { margin: 0 8px 0 0; }
+
+    .is-ie .conbox04 .b01-textBox01 .masteringBox dd { 
+        display: block;
+        width: 100%;
+    }
+    .is-ie .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 li span:last-child {
+        padding: 0 0 0 15px;
+    }
+    /* .is-ie .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 h5, */
+    /* .is-ie .conbox04 .b01-textBox01 .makeitconBox :last-child.makeitcon01 h5 { width: 100%; } */
+
+    .ie10 .b01-textBox01.startup .spBox .tabBox01 .spTextBox .spText { width: 320px; }
+
+    .ie9 .side-quikmenu > ul > li { width: 100%; } 
+
+    .ie9 .conbox02 .b01-textBox02 span,
+    .ie9 .conbox03 .b01-textBox02 span,
+    .ie9 .conbox04 .b01-textBox02 span { float: none; }
+
+    .ie9 .conbox02 .kick .b01-textBox02 span,
+    .ie9 .conbox02 .branding .b01-textBox02 span,
+    .ie9 .conbox02 .startup .b01-textBox02 span,
+    .ie9 .conbox02 .mento .b01-textBox02 span,
+    .ie9 .conbox02 .office-support .b01-textBox02 span,
+    .ie9 .conbox02 .translation .b01-textBox02 span,
+    .ie9 .conbox02 .local .b01-textBox02 span,
+    .ie9 .conbox04 .makeitcon .b01-textBox02 span { 
+        transform: rotate(90deg);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ie9 .conbox02 .b01-textBox02 .process { 
+        height: 300px; 
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .ie9 .conbox02 .b01-textBox02 dl {
+        float: none;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .ie9 .conbox02 .next .b01-textBox02 span { 
+        display: block;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .ie9 .b01-textBox01.startup .spBox .tab { padding: 0 0 0 24px; }
+    .ie9 .conbox02 .startup .b01-textBox01 .spBox .tab li {
+        width: 29%;
+        margin: 0 15px 0 0;
+    }
+    .ie9 .conbox02 .startup .b01-textBox01 .spBox .tab li:last-child { margin: 0; }
+    .ie9 .b01-textBox01.startup .spBox .tabBox01 .spTextBox .spTitle { width: 70px; }
+    .ie9 .b01-textBox01.startup .spBox .tabBox01 .spTextBox { padding: 0; }
+    .ie9 .b01-textBox01.startup .spBox .tabBox01 .spTextBox .spText { 
+        float: none; 
+        width: 71%;
+        margin: 0 0 0 71px;
+        padding: 40px 0 0 30px;
+    }
+    .ie9 .b01-textBox01.startup .spBox :nth-of-type(3).tabBox01 .spTextBox .spText { 
+        padding: 60px 0 0 0; 
+    }
+    .ie9 .spBox .tabBox01 .spText02 { padding: 0 0 0 25px; }
+    .ie9 .spBox .tabBox01 .spText02 li span { width: 90%; }
+
+    .ie9 .conbox02 .local .localBox dt { float: none; }
+    .is-ie .conbox02 .local .localBox dt { width: 100%; }
+    
+    .ie9 .conbox02 .translation .translationBox01 h5 { 
+        float: none; 
+        margin: 0; 
+    } 
+    .ie9 .conbox02 .translation .translationBox01 ul { 
+        width: 80%; 
+        margin: 20px 0 0 20px;
+    }
+    .ie9 .conbox02 .translation div:nth-of-type(2).translationBox01 h5 { margin: 0; }
+    .ie9 .conbox02 .translation .translationBox01 { padding: 20px 0 0 0;}
+
+    .ie9 .conbox03 .b01-textBox02 .process { 
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .ie9 .conbox03 .academy .b01-textBox02 dl,
+    .ie9 .conbox03 .spotlight .b01-textBox02 dl {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .ie9 .conbox03 .academy .b01-textBox02 span,
+    .ie9 .conbox03 .spotlight .b01-textBox02 span {
+        display: block;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+    .ie9 .conbox04 .b01-textBox01 .masteringBox dl { height: 145px; }
+    .ie9 .conbox04 .b01-textBox01 .masteringBox dt { 
+        float: none;
+        margin: 0; 
+    }
+    .ie9 .conbox04 .b01-textBox01 .masteringBox dd {
+        height: 112px; 
+        text-align: left;
+        padding: 10px 0 0 10px;
+    }
+    .ie9 .conbox04 .b01-textBox01 .masteringBox dl:nth-of-type(2) dd { padding: 20px 0 0 10px; }
+    .ie9 .conbox04 .b01-textBox01 .masteringBox dl:nth-of-type(3) dd { padding: 10px 0 0 5px; }
+
+    .ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 { height: 170px; }
+    .ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 h5 { float: none; }
+    .ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 ul { padding: 0; }
+    .ie9 .conbox04 .b01-textBox01 .makeitconBox .makeitcon01 li span:last-child { 
+        display: inline-block;
+    }
+
+    .ie9 .conbox04 .b01-textBox02 .process {
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .ie9 .conbox04 .b01-textBox02 dl {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .ie9 header .topmenu a.logo { float: left; }
+
+    .ie9 header .topmenu span.Mopen {
+        background-image: url('../img/menuopen.svg');
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+        background-size: cover;
+        float: left;
+        margin: 2%;
+    }
+
+    .ie9 header .topmenu .gnb > li { float: none; }
+
+    .ie9 header .topmenu span.Mclose {
+        background-image: url('../img/close.svg');
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+        background-size: cover;
+        float: right;
+        margin: 2%;
+    }
+}
+ 
+
+ 

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+* { word-break: keep-all; }
+
+body { min-width: 100%; }
+
+.inner { width: 90%; }
+
+header { 
+    height: 230px;
+    padding: 15px 0 0 0;
+}
+
+header .topmenu::after {
+    width: unset;
+    height: unset;
+    background-color: unset;
+    position: relative;
+    left: unset;
+    top: unset;
+    transition: unset;
+    z-index: unset
+}
+
+header .topmenu:hover::after {
+    height: unset;
+    transition: unset;
+}
+
+header .topmenu { width: 100%; }
+
+header .topmenu a.logo {
+    width: 80%;
+    height: 60px;
+    background-position: 10% 50%;
+}
+
+header .topmenu span.Mopen { 
+    display: block; 
+    align-self: flex-start;
+    padding: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+header .topmenu span.Mclose {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    height: 75px;
+    text-align: right;
+}
+
+header .topmenu nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
+    padding: 30px 0 0;
+    transform: translateX(100%);
+}
+
+header .topmenu nav.on {
+    transform: translateX(0%);
+    transition: transform 0.7s;
+}
+
+header .topmenu ul.gnb {
+    width: 100%;
+    line-height: 75px;
+    flex-direction: column;
+}
+
+header .topmenu .gnb > li a {
+    color: #000;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 10px;
+    line-height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #777;
+}
+.gnb li .submenu > li {
+    background-color: #DDE2E5;
+    padding: 10px 22px;
+}
+
+.gnb li .submenu > li a {
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+    font-weight: 400;
+    border-bottom: unset;
+}
+
+header .topmenu .gnb > li span { display: none; }
+
+header .inner .title { 
+    font-size: 15px;
+    padding: 40px 0 0 0;
+}
+
+header .inner .title p { 
+    padding: 10px 0 0 0; 
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.sub02section .inner { padding: 35px 0 0 0;}
+
+.sub02section .pText { display: none; }
+
+.sub02section .mText { 
+    display: block; 
+    text-align: center;
+}
+
+.sub02section .mapinner { width: 100%; }
+
+.sub02section .mapinner img { width: 100%;}
+
+.sub02section h2 { font-size: 18px; }
+
+.sub02section p { 
+    font-size: 15px; 
+    padding: 15px 0 0 0;
+}
+
+.equipment { display: none; }
+
+footer {  height: 170px; }
+
+footer ul.list li { 
+    font-size: 14px;
+    margin: 0 15px 0 0;
+}
+
+footer ul.list li:last-child { margin: 0; }
+
+footer .address { font-size: 14px; }

@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+* { word-break: keep-all; }
+
+body { min-width: 100%; }
+
+.inner {
+    width: 90%;
+    padding: 0;
+}
+
+header { 
+    height: 280px;
+    padding: 15px 0 0 0;
+}
+
+header .topmenu::after {
+    width: unset;
+    height: unset;
+    background-color: unset;
+    position: relative;
+    left: unset;
+    top: unset;
+    transition: unset;
+    z-index: unset
+}
+
+header .topmenu:hover::after {
+    height: unset;
+    transition: unset;
+}
+
+header .topmenu { width: 100%; }
+
+header .topmenu a.logo {
+    width: 80%;
+    height: 60px;
+    background-position: 10% 50%;
+}
+
+header .topmenu span.Mopen { 
+    display: block; 
+    align-self: flex-start;
+    padding: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+header .topmenu span.Mclose {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    height: 75px;
+    text-align: right;
+}
+
+header .topmenu nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
+    padding: 30px 0 0;
+    transform: translateX(100%);
+}
+
+header .topmenu nav.on {
+    transform: translateX(0%);
+    transition: transform 0.7s;
+}
+
+header .topmenu ul.gnb {
+    width: 100%;
+    line-height: 75px;
+    flex-direction: column;
+}
+
+header .topmenu .gnb > li a {
+    color: #000;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 10px;
+    line-height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #777;
+}
+.gnb li .submenu > li {
+    background-color: #DDE2E5;
+    padding: 10px 22px;
+}
+
+.gnb li .submenu > li a {
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+    font-weight: 400;
+    border-bottom: unset;
+}
+
+header .topmenu .gnb > li span { display: none; }
+
+header .inner .title { padding: 35px 0 0 0;}
+
+.side-quikmenu {
+    position: sticky;
+    top: 0;
+    /* 767이하용, 모션제거 */
+    left: 10px;
+    transform: unset;
+    width: 100%;
+    transition: none;
+    z-index: 1;
+}
+.side-quikmenu.scroll {
+    top: 0px;
+    transition: none;
+    /* 767이하용, 모션제거 */
+}
+.side-quikmenu > ul { 
+    display: flex;
+    overflow-x: auto;
+}
+
+.side-quikmenu > ul > li {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.side-quikmenu > ul > li span {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-quikmenu li { 
+    margin: 0; 
+    background-color: #eee;
+}
+
+.side-quikmenu li > ul { 
+    display: flex;
+    flex-direction: column;
+}
+
+.side-quikmenu li > ul li { 
+    margin: 0 0 5px 0; 
+    width: 100%;
+    text-align: center;
+}
+
+.side-quikmenu li > ul li:first-child { margin: 5px 0 5px 0; }
+
+.side-quikmenu::before { display: none; }
+
+.side-quikmenu ul li.on span:before { display: none; }
+
+.sub01section .scrolltext { 
+    display: flex; 
+    align-items: center;
+    color: #777;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+}
+
+.sub01section .scrolltext p { 
+    align-self: center; 
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.sub01section .contents { padding: 30px 0 0 0;}
+
+.contents .conbox01 dd span { 
+    display: block;
+    margin: 0 0 10px 0;
+}
+.conbox02 .b01-textBox01 dt::after { width: 40%; }
+
+.conbox02 .b01-textBox02 .process { overflow-x: auto;}
+
+.conbox02 .b01-textBox02 dl { 
+    width: 40%;
+    flex-shrink: 0; 
+}
+
+.conbox02 .kick { padding: 0; }
+
+.conbox02 .branding,
+.conbox02 .next,
+.conbox02 .startup,
+.conbox02 .mento,
+.conbox02 .office-support,
+.conbox02 .translation,
+.conbox02 .local { padding: 43px 0 0 0; }
+
+.conbox02 .next .b01-textBox01 .nextBoxs { 
+    width: 100%;
+    overflow-x: auto;
+}
+
+.conbox02 .next .b01-textBox01 .nextBoxs .nextBox01, 
+.conbox02 .next .b01-textBox01 .nextBoxs .nextBox02 { 
+    width: 100%; 
+    flex-shrink: 0;
+}
+
+.conbox02 .next .b01-textBox02 dl { width: 85%; }
+
+.b01-textBox01.startup .spBox .tab li { margin: 0;}
+.conbox02 .startup .b01-textBox02 dl { width: 35%; }
+
+.spBox .tabBox01 .spText02 li { width: 48%; }
+.spBox .tabBox01 .spText02 li span:first-child { width: 100%; }
+
+.mento .b01-textBox01 table { 
+    width: 100%; 
+    display: none;
+}
+.conbox02 .mento .mentoTable tbody.mobileTable td.letter,
+.conbox02 .mento .mentoTable tbody.mobileTable td.visit { font-size: 13px; }
+
+.mento .b01-textBox01 table:nth-of-type(2) { display: table; }
+
+.conbox02 .mento-textBox02 dl,
+.conbox02 .local-textBox02 dl { width: 40%; }
+
+.conbox02 .office-support .b01-textBox02 dl { width: 45%;}
+
+.conbox02 .translation .translationBox01 { 
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+.conbox02 .translation .translationBox01 h5 { align-self: flex-start; }
+.conbox02 .translation .translationBox01 ul { margin: 20px 0;}
+
+.conbox02 .local .localBox dl { flex-direction: column; }
+.conbox02 .local .localBox dt { 
+    width: 100%;
+    margin: 0; 
+}
+.conbox02 .local .b01-textBox01 dd {  margin: 20px 0 0 0; }
+.conbox02 .local .b01-textBox01 dl:nth-of-type(2) dd { padding: 0; }
+
+.presscorps .conbox03 .luxuryclass,
+.presscorps .conbox03 .academy,
+.conbox03 .spotlight { padding: 43px 0 0 0; }
+
+.conbox03 .b01-title h3 span { display: block; }
+
+.conbox03 .b01-textBox02 .process { 
+    width: 100%;
+    overflow-x: auto;
+}
+.conbox03 .academy .b01-textBox02 dl {
+    width: 65%;
+    flex-shrink: 0;
+}
+
+.conbox03 .academy .b01-textBox02 dl:nth-of-type(3) dt { line-height: 55px; }
+
+.conbox03 .spotlight .b01-textBox01 dt::after { width: 30%; }
+
+.conbox03 .spotlight .b01-textBox02 dl {
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.sub01section .equipment .conbox04 .mastering,
+.sub01section .equipment .conbox04 .makeitcon { padding: 43px 0 0 0; }
+
+.conbox04 .b01-textBox02 .process { 
+    width: 100%;
+    overflow-x: auto;
+}
+.conbox04 .b01-textBox02 dl {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.conbox04 .b01-textBox01 .masteringBox dl { flex-direction: column; }
+.conbox04 .b01-textBox01 .masteringBox dt { width: 70%; }
+.conbox04 .b01-textBox01 .masteringBox dd { 
+    padding: 10px; 
+    align-self: flex-start;
+}
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 h5 {
+    width: 70%;
+    font-size: 14px; 
+}
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 { flex-direction: column; }
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 ul { margin: 20px 0 0 0;}
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 ul li { display: flex; }
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 li span:last-child { font-size: 14px; }
+
+footer { height: 187px; }
+
+footer ul.list li { 
+    font-size: 14px;
+    margin: 0 15px 0 0;;
+}
+
+footer ul.list li:last-child { margin:0; }
+
+footer .address { font-size: 14px; }

@@ -1,0 +1,825 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* Noto Sanas 폰트 */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.14 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('programIEstyle.css');
+/* IE Cross browsing */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid salmon; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body { min-width: 1280px; }
+
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.inner { 
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header 영역 */
+header {
+    height: 350px;
+    background: url('../img/headerback03.png') 0 60% no-repeat;
+    background-size: cover;
+    padding: 27px 0 0 0;
+    position: relative;
+}
+
+header .topmenu::after {
+    width: 100%;
+    height: 0;
+    background-color: #596F80; content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: height 0.5s;
+    z-index: 10;
+}
+    
+header .topmenu:hover::after {
+    height: 290px;
+    transition: height 0.5s;
+}
+
+header .topmenu {
+    width: 1250px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header .topmenu a.logo {
+    width: 241px;
+    height: 75px;
+    background: url('../img/logo-white.svg') 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    text-indent: -9000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+}
+
+header .topmenu span.Mopen,
+header .topmenu span.Mclose { display: none; }
+
+header .topmenu nav {
+    width: 60%;
+    display: flex;
+    position: relative;
+    z-index: 20;
+}
+
+header .topmenu ul.gnb {
+    width: 100%;
+    line-height: 75px;
+    display: flex;
+}
+
+header .topmenu .gnb > li a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    width: 120px;
+}
+
+header .topmenu .gnb > li:nth-of-type(3) > a, 
+header .topmenu .gnb > li:nth-of-type(4) > a,
+.gnb li:nth-of-type(3) > .submenu > li:first-child > a,
+.gnb li:nth-of-type(4) > .submenu > li:first-child > a { color: #a1a1a1; }
+
+header .topmenu .gnb > li a:hover { color: #000; }
+
+header .topmenu .gnb > li span {
+    color: #fff;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.gnb li .submenu { display: none; }
+
+.gnb li .submenu > li a {
+    display: block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.gnb li .submenu > li a:hover { 
+    color: #000; 
+    font-weight: 400;
+}
+
+header .inner .title {
+    color: #fff;
+    text-align: center;
+    padding: 85px 0 0 0;
+}
+
+header .inner .title p {
+    padding: 30px 0 0 0;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+/* conbox01 -- 콘텐츠 특화 육성 영역 */
+.sub01section .scrolltext { display: none; }
+
+.sub01section .contents { padding: 65px 0 0 0; }
+
+.sub01section .contents h2 { margin: 0 0 18px 0; }
+
+.sub01section .contents .title p { font-weight: bold; }
+
+.contents .title p span:first-child,
+.contents .conbox01 dl:first-child dt span { color: #146033; }
+
+.contents .title p span:nth-of-type(2),
+.contents .conbox01 dl:nth-of-type(2) dt span { color: #E07F63; }
+
+.contents .title p span:nth-of-type(3),
+.contents .conbox01 dl:nth-of-type(3) dt span { color: #1D2C65; } 
+
+.contents .title p span:nth-of-type(4),
+.contents .conbox01 dl:nth-of-type(4) dt span { color: #E06666; }
+
+.contents .conbox01 dl {  border-bottom: 1px solid #A3A3A3;  }
+
+.contents .conbox01 dl:last-child { border-bottom: none; }
+
+.contents .conbox01 dt { 
+    font-weight: bold; 
+    font-size: 18px;
+    margin: 40px 0 20px 0;
+}
+
+ .contents .conbox01 dd { margin: 0 0 40px 0; }
+
+.contents .conbox01 dd span { 
+    font-weight: bold;
+    margin: 0 15px 0 0;
+}
+
+/* conbox02 -- 사업화지원 / 인큐베이팅 */
+/* conbox02 -- 킥! 스타트업 콘텐츠 제작 지원 */
+
+.sub01section .contents { padding: 43px 0 0 0; }
+
+.sub01section .business .title { margin: 0 0 20px 0; }
+
+.sub01section .business .title h2 { margin: 0 0 15px 0; }
+
+.sub01section .business .title p { 
+    color: #AD2526;
+    font-weight: bold;
+}
+
+.conbox02 .kick { padding: 0 0 0 22px; }
+
+.conbox02 .kick .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .b01-textBox01 { padding: 43px 0 0 0; }
+
+.conbox02 .b01-textBox01 h4,
+.conbox02 .b01-textBox02 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox02 .b01-textBox01 dl { padding: 23px 0 0 0; }
+
+.conbox02 .b01-textBox01 dt { 
+    font-weight: bold; 
+    position: relative;
+}
+
+.conbox02 .b01-textBox01 dt::after {
+    position: absolute;
+    content: "";
+    background-color: #EE4F51;
+    width: 12%;
+    height: 2px;
+    left: 0;
+    top: 30px;
+}
+
+.conbox02 .b01-textBox01 dd { padding: 20px 0 0 0; }
+
+.conbox02 .b01-textBox02 { padding: 43px 0 0 0; }
+
+.conbox02 .b01-textBox02 .process { 
+    display: flex; 
+    justify-content: space-between;
+    padding: 23px 0 0 0;
+}
+
+.conbox02 .b01-textBox02 dl {
+    width: 17%;
+    height: 150px;
+    text-align: center;
+    padding: 23px 0 0 0;
+}
+
+.conbox02 .b01-textBox02 dt { 
+    font-weight: bold; 
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0 0 5px 0;
+}
+
+.conbox02 .b01-textBox02 dd { padding: 5px 0 0 0; }
+
+.conbox02 .b01-textBox02 span {
+    align-self: center;
+    color: #EE4F51;
+    margin: 0 0 42px 0;
+}
+
+/* conbox02 -- 충북문화브랜딩 */
+.conbox02 .branding { padding: 43px 0 0 22px; }
+
+.conbox02 .branding .b01-title p { padding: 20px 0 0 0; }
+
+/* conbox02 -- 넥스트 스타트업 챌린지 */
+.conbox02 .next { padding: 43px 0 0 22px; }
+
+.conbox02 .next .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .next .b01-textBox01 .nextBoxs {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+.conbox02 .next .b01-textBox01 .nextBoxs .nextBox01,
+.conbox02 .next .b01-textBox01 .nextBoxs .nextBox02 { width: 50%; }
+
+.conbox02 .next .b01-textBox01 dl { 
+    padding: 35px 0 0 0;
+    display: flex;
+}
+
+.conbox02 .next .b01-textBox01 dt { 
+    font-weight: bold; 
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 100%;
+    border: 1px solid #777;
+    text-align: center;
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+}
+
+.conbox02 .next .b01-textBox01 dt::after { display: none; }
+
+.conbox02 .next .b01-textBox01 dd { 
+    align-self: center; 
+    padding: 0;
+}
+
+.conbox02 .next .b01-textBox02 { padding: 43px 0 0 0; }
+
+.conbox02 .next .b01-textBox02 .process.next { 
+    display: flex;
+    justify-content: unset;
+    padding: 23px 0 0 0;
+}
+
+.conbox02 .next .b01-textBox02 dl {
+    width: 20%;
+    height: 165px;
+}
+
+.conbox02 .next .b01-textBox02 span {
+    align-self: center;
+    color: #EE4F51;
+    margin: 0 8px 8px 8px;
+}
+
+/* conbox02 -- 스타트업 시장진출 사업 */
+.conbox02 .startup { padding: 63px 0 0 22px; }
+
+.conbox02 .startup .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .startup .b01-title p:last-child { padding: 10px 0 0 0; }
+
+.conbox02 .b01-textBox01.startup { padding: 43px 0 0 0; }
+
+.conbox02 .startup .b01-textBox01.startup h4:first-child {
+    color: #EE4F51; 
+    font-size: 18px;
+    margin: 0 20px 0 0;
+}
+
+.startup .b01-textBox01.startup .textSub {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+}
+
+.b01-textBox01.startup .spBox { 
+    width: 100%; 
+    margin: 33px 0 0 0;
+}
+
+.b01-textBox01.startup .spBox .tab {
+    display: flex;
+    justify-content: center;
+}
+
+.b01-textBox01.startup .spBox .tab li {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #777;
+    margin: 0 35px 0 0;
+    cursor: pointer;
+}
+
+.b01-textBox01.startup .spBox .tab li.on { border: 2px solid #EE4F51; }
+
+.b01-textBox01.startup .spBox .tabBox01.box01 { display: none; }
+
+.b01-textBox01.startup .spBox .tabBox01.box01.on { display: block; }
+
+.b01-textBox01.startup .spBox .tabBox01 .spTextBox {
+    display: flex;
+    justify-content: center;
+    min-height: 220px;
+    margin: 25px 0 0 0;
+}
+
+.b01-textBox01.startup .spBox .tabBox01 .spTextBox .spText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.b01-textBox01.startup .spBox .tabBox01 .spTextBox .spText li { margin: 0 0 10px 0; }
+
+.b01-textBox01.startup .spBox .tabBox01 .spTextBox .spTitle {
+    margin: 0 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.spBox .tabBox01 .spTextBox .spTitle p:first-child { margin: 0 0 10px 0; }
+
+.spBox .tabBox01 .spTextBox .spTitle p strong { display: block; }
+
+.spBox .tabBox01 .spTextBox .spText02 li { margin: 0 0 20px 0; }
+
+.spBox .tabBox01 .spText02 {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+
+.spBox .tabBox01 .spText02 li { 
+    margin: 0 30px 0 0;
+    text-align: center; 
+}
+
+.spBox .tabBox01 .spText02 li:last-child { margin: 0; }
+
+.spBox .tabBox01 .spText02 li span { display: block; }
+
+.spBox .tabBox01 .spText02 li span:first-child { 
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #EE4F51;
+    border-radius: 30px;
+    font-weight: bold; 
+    margin: 0 0 23px 0;
+}
+
+.conbox02 .startup .b01-textBox02 { padding: 43px 0 0 0; }
+
+/* conbox02 -- 열정멘토단 */
+.conbox02 .mento { padding: 63px 0 0 22px; }
+
+.conbox02 .mento .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .mento .b01-title p:last-child { padding: 10px 0 0 0; }
+
+.conbox02 .mento .b01-textBox01 h4  { margin: 0 0 20px 0; }
+
+.mento .b01-textBox01 table {
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.mento .b01-textBox01 table:nth-of-type(2) { display: none; }
+
+.mento .b01-textBox01 table thead { 
+    height: 60px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7E7A7A;
+}
+
+.mento .b01-textBox01 table tbody tr { height: 60px; }
+
+.mento .b01-textBox01 table tbody tr .category { font-weight: bold; }
+
+.mento .b01-textBox01 table tr:nth-of-type(2),
+.mento .b01-textBox01 table tr:nth-of-type(4) { background-color: #EEEEEE; }
+
+/* conbox02 -- 스타트업 입주지원 */
+.conbox02 .office-support { padding: 63px 0 0 22px; }
+
+.conbox02 .office-support .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .b01-textBox01 { padding: 43px 0 0 0; }
+
+/* conbox02 -- 신한류, 해외진출 기업 대상 외국어 통번역 지원 */
+.conbox02 .translation .b01-textBox01 dt::after { display: none; }
+
+.conbox02 .translation { padding: 63px 0 0 22px; }
+
+.conbox02 .translation .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .translation .translationBox01 { display: flex; }
+
+.conbox02 .translation .translationBox01 h5 {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-self: center;
+    border: 1px solid #EE4F51;
+    border-radius: 30px;
+}
+
+.conbox02 .translation .translationBox01 ul { margin: 20px 0 20px 20px; }
+
+.conbox02 .translation .translationBox01 ul li { margin: 0 0 15px 0; }
+
+.conbox02 .translation .translationBox01 ul li:last-child { margin: 0; }
+
+/* conbox02 -- 지역활용 실감형 콘텐츠 제작 지원 */
+.conbox02 .local { padding: 63px 0 0 22px; }
+
+.conbox02 .local .b01-title p { padding: 20px 0 0 0; }
+
+.conbox02 .local .localBox { 
+    width: 100%; 
+    padding: 20px 0 0 0;
+} 
+
+.conbox02 .local .localBox dl {
+    display: flex;   
+    padding: 10px;
+}
+
+.conbox02 .local .localBox dt {
+    width: 255px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #EE4F51;
+    border-radius: 30px;
+    margin: 0 40px 0 0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.conbox02 .local .b01-textBox01 dt::after { display: none; }
+
+.conbox02 .local .b01-textBox01 dd { padding: 0; }
+.conbox02 .local .b01-textBox01 dl:nth-of-type(2) dd { padding: 15px 0 0 0; }
+
+/* 지역 콘텐츠 전문 인력양성 및 인지도 제고 */
+/* conbox03 -- 명품클래스 */
+.sub01section .presscorps { padding: 40px 0 0 0; }
+
+.presscorps .conbox03 .luxuryclass { padding: 43px 0 0 22px; }
+
+.presscorps .conbox03 .b01-title p { padding: 20px 0 0 0; }
+
+.presscorps .conbox03 .b01-textBox01 { padding: 43px 0 0 0; }
+
+.conbox03 .b01-textBox01 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox03 .b01-textBox01 .list {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.conbox03 .b01-textBox01 .list dl { 
+    display: flex; 
+    padding: 0 0 20px 0;
+}
+
+.conbox03 .luxuryclass .b01-textBox01 dd { padding: 0; }
+
+.conbox03 .b01-textBox01 .list dt { font-weight: bold; }
+
+.conbox03 .b01-textBox01 .list dd { margin: 0 0 0 10px; }
+
+/* conbox03 -- 아이코마 아카데미 */
+.presscorps .conbox03 .academy { padding: 63px 0 0 22px; }
+
+.conbox03 .b01-title h3 span { font-weight: 400; }
+
+.conbox03 .b01-title p { padding: 20px 0 0 0; }
+
+.conbox03 .b01-textBox02 { padding: 43px 0 0 0; }
+
+.conbox03 .academy .b01-textBox02 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox03 .b01-textBox02 .process { 
+    width: 75%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.conbox03 .b01-textBox02 dl {
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    padding: 23px 0 0 0;
+}
+
+.conbox03 .b01-textBox02 dt { 
+    font-weight: bold; 
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0 0 5px 0;
+    height: 55px;
+}
+
+.conbox03 .b01-textBox02 dd { padding: 5px 0 0 0; }
+
+.conbox03 .b01-textBox02 span {
+    align-self: center;
+    color: #EE4F51;
+    margin: 7px 0 0 0;
+}
+
+/* conbox03 -- 스포트라이트 충북 */
+.conbox03 .spotlight { padding: 63px 0 0 22px; }
+
+.conbox03 .b01-textBox01 h4,
+.conbox03 .b01-textBox02 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox03 .b01-textBox01 dl { padding: 23px 0 0 0; }
+
+.conbox03 .spotlight .b01-textBox01 dt {
+    font-weight: bold;
+    position: relative;
+}
+
+.conbox03 .spotlight .b01-textBox01 dt::after {
+    position: absolute;
+    content: "";
+    background-color: #EE4F51;
+    width: 8%;
+    height: 2px;
+    left: 0;
+    top: 30px;
+}
+
+.conbox03 .b01-textBox01 dd { padding: 20px 0 0 0; }
+
+.conbox03 .spotlight .b01-textBox02 dt {  height: 30px; }
+
+.conbox03 .spotlight .b01-textBox02 span { margin: 0 5px 42px 5px; }
+
+/* 기초 장비 교육 */
+/* conbox04 -- 장비 마스터링 교육 */
+.sub01section .equipment { padding: 40px 0 0 0; }
+
+.conbox04 .mastering { padding: 43px 0 0 22px; }
+
+.conbox04 .b01-title p { padding: 20px 0 0 0; }
+
+.conbox04 .b01-textBox01 { padding: 43px 0 0 0; }
+
+.conbox04 .b01-textBox01 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox04 .b01-textBox01 .masteringBox { padding: 23px 0 0 0; }
+
+.conbox04 .b01-textBox01 .masteringBox dl { display: flex; }
+
+.conbox04 .b01-textBox01 .masteringBox dt {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #EE4F51;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 20px 20px 0;
+}
+
+.conbox04 .b01-textBox01 .masteringBox dd { align-self: center; }
+
+/* conbox04 -- 3D메이킷콘 */
+.conbox04 .makeitcon { padding: 43px 0 0 22px; }
+
+.conbox04 .b01-title p { padding: 20px 0 0 0; }
+
+.conbox04 .b01-textBox01 h4,
+.conbox04 .b01-textBox02 h4 { 
+    color: #EE4F51; 
+    font-size: 18px;
+}
+
+.conbox04 .b01-textBox01 .makeitconBox { padding: 23px 0 0 0; }
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 { 
+    display: flex; 
+    margin: 0 0 20px 0;
+}
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01:last-child { margin: 0;}
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 h5 {
+    width: 180px;
+    font-size: 15px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 10px 0 0 0;
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01:last-child h5 { padding: 20px 0 0 0; }
+
+.conbox04 .b01-textBox01 .makeitconBox .makeitcon01 li span:first-child {
+    margin: 0 10px 0 0;
+    color: #EE4F51;
+    font-weight: bold;
+}
+
+.conbox04 .b01-textBox02 .process { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.conbox04 .b01-textBox02 { padding: 43px 0 0 0; }
+
+.conbox04 .b01-textBox02 dl {
+    width: 17%;
+    height: 150px;
+    text-align: center;
+    padding: 23px 0 0 0;
+}
+
+.conbox04 .b01-textBox02 dt { 
+    font-weight: bold; 
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0 0 5px 0;
+}
+
+.conbox04 .b01-textBox02 dd { padding: 5px 0 0 0; }
+
+.conbox04 .b01-textBox02 span {
+    align-self: center;
+    color: #EE4F51;
+    margin: 0 0 42px 0;
+}
+
+/* Footer 영역 */
+footer {
+    height: 180px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+footer ul.sns {
+    padding: 28px 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer ul.sns span:first-child { margin: 0 5px 0 0; }
+
+footer li { margin: 0 15px 0 0; }
+
+footer ul.sns span.fb,
+footer ul.sns span.ins {
+    font-size: 17px;
+}
+
+footer ul.list {
+    padding: 21px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul.list li { margin: 0 30px 0 0; }
+
+footer .address {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 17px 0 0 0;
+}
+
+/* side quik menu bar */
+.side-quikmenu {
+    position: fixed;
+    top: 351px;
+    /* pc용 */
+    left: 40px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    color: #777777;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.side-quikmenu::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #A3A3A3;
+    top: 0;
+    left: -10px;
+}
+.side-quikmenu.scroll {
+    top: 50px;
+    transition: all 0.5s;
+}
+.side-quikmenu li { 
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.side-quikmenu li > ul li {
+    font-weight: 400;;
+    margin: 0 0 10px 5px;
+}
+
+.side-quikmenu li > ul li:first-child { margin: 5px 0 10px 5px; }
+
+.side-quikmenu ul li { position: relative; }
+
+.side-quikmenu ul li.on span:before {
+    position: absolute;
+    content: "";
+    widtH: 3px;
+    height: 21px;
+    background-color: #EE4F51;
+    left: -10px;
+    top: -2px;
+}
+
+.side-quikmenu li.on { color: #EE4F51; }
+
+.side-quikmenu > ul > li.on li { color: #777777; }
+
+.side-quikmenu > ul > li li.on { color: #EE4F51; }
+
+
