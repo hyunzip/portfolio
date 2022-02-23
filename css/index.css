@@ -1,0 +1,510 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,700&family=Gowun+Dodum&display=swap');
+/* Cinzel & Cormorant Garamond & Gowun Dodum & 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Racing+Sans+One&display=swap');
+/* Michroma & Racing Sans One 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* google icon Outline */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awesome v5.15.4 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid salmon; */
+    font-family: 'Cinzel', serif;
+    font-family: 'Cormorant Garamond', serif;  
+    font-family: 'Gowun Dodum', sans-serif;  
+    word-break: keep-all;
+}
+
+body {  background: #474747; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body .top {
+    position: fixed;
+    bottom: 15px;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    background: url('../images//topbt.svg') 50% 50% no-repeat;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 15% 0;
+    position: absolute;
+    z-index: 200;
+}
+header ul { display: flex; }
+
+header ul li { margin: 0 60px 0 0; }
+
+header ul li:last-child { margin: 0; }
+
+header a { 
+    color: #fff; 
+    font-size: 20px; 
+    font-family: 'Cinzel', serif;
+}
+header > a { color: #000;}
+
+/* intro - bg 영역 */
+.intro {
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+    color: #000;
+    position: relative;
+    z-index: 100;
+    background-image: url('../images/introbgblur.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intro .introback {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../images/introbg.png');
+    background-size: 85%;
+    background-position: 150% 70%;
+    background-repeat: no-repeat;
+   
+}
+.intro h1, 
+.intro h2 {
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    font-style: italic;
+}
+.intro h1 {
+    font-size: 40px;
+    margin: 0 0 2% 0;
+}
+.intro h2 { letter-spacing: 7px; }
+
+.intro h2:nth-of-type(1) {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 0 0.7% 0;
+}
+
+h1.ani.fadeInDown {
+    animation: fadeInDown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+h2.ani.fadeIn {
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+/* Section - about 영역 */
+.about { 
+    padding: 6% 15% 0 15%; 
+    background-color: #f1f1f1;
+}
+
+.about h2, .about h3 { font-family: 'Cinzel', serif;}
+
+.about h2 {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.about h2:nth-of-type(1) { margin: 0 0 5%; }
+
+.about h2:nth-of-type(2) { font-size: 18px; }
+
+.about .con01 h3 {
+    font-size: 18px;
+    color: #495C75;
+    margin: 4% 0 0 0;
+}
+
+.about .con01 ul { margin: 2% 0 0 0; }
+.about .con01 ul li { 
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+}
+
+.about .con01 ul li:last-child { margin: 1.2% 0 0 0; }
+.about .con01 ul li span:first-child { margin: 0 1.5% 0 0; }
+
+/* Section - portfolio 영역 */
+
+/* projectBox display: none/flex */
+.portfolio .project { 
+    display: none; 
+    padding: 2% 15% 2%; 
+}
+.portfolio .project.on { display: flex; }
+
+/* Project A - 하겐다즈 */
+.portfolio { background-color: #f1f1f1; }
+.portfolio h2,
+.portfolio h3,
+.proInfo .preText .keyword h4,
+.proInfo .preText .to-be, 
+.proInfo .preText .basicInfo h4 { font-family: 'Cinzel', serif; }
+
+.preText .num01 h4,
+.preText .num02 h4,
+.preText .num03 h4,
+.preText .num04 h4 { font-family: 'Gowun Dodum', sans-serif; }
+
+.portfolio h2:nth-of-type(1) { 
+    margin: 0 0 2%; 
+    padding: 3% 15% 0; 
+}
+
+.portfolio h2 {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.portfolio .tab { 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+.portfolio .tab ul {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 25%;
+    background-color: #f1f1f1;
+}
+.portfolio .tab ul li {
+    line-height: 70px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.portfolio .tab ul li.on {
+    background-image: url('../images/liback.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 100%;
+}
+.project .proInfo { 
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 0 0 0;
+}
+.proInfo p { color: #444444; }
+.proInfo .title {
+    width: 100%; 
+    display: flex;
+}
+.proInfo .title h3 { margin: 0 1.5% 0 0; }
+.proInfo .title p { font-weight: bold; }
+.proInfo .preText {  padding: 4% 1% 0 1%; }
+
+.proInfo .num01,
+.proInfo .num02,
+.proInfo .num03,
+.proInfo .keyword,
+.proInfo .preText .bannerImgs,
+.proInfo .preText .bannershot,
+.proInfo .preText .editImgs,
+.proInfo .num04,
+.proInfo .num04 p { margin: 0 0 3% 0; }
+
+.proInfo .preText .indexImgs { width: 100%; }
+
+.proInfo .preText p,
+.proInfo .preText .keyword .keyBox { padding: 1.5% 0 0 2%;}
+
+.proInfo .preText .keyword { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+}
+.proInfo .preText .keyword .keyBox { display: flex;}
+.proInfo .preText .keyword .keyBox p { 
+    padding: 45px 0 0 0;
+    margin: 0 4% 0 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 2px solid #94B49F;
+    color: #000;
+}
+.proInfo .preText .keyword .keyBox p:last-child { border: 2px solid #789395; }
+
+.proInfo .preText img { 
+    margin: 5.5% 0 3% 0;
+    width: 100%; 
+}
+.proInfo .preText .bannerImgs { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.proInfo .preText .bannerImgs > img { 
+    margin: 0;
+    width: 49%;
+    height: 100%;
+}
+
+.proInfo .preText .bannerImgs > img:nth-of-type(2) { margin: 2% 0 0 1%; }
+.proInfo .preText .bannerImgs > img:nth-of-type(3) { margin: -2% 1% 0 0; }
+
+.proInfo .preText .infoWrap {  
+    height: 70px;
+    display: flex;
+}
+.proInfo .preText .infoWrap.wrap01 { margin: 5% 0 3% 0; }
+.proInfo .preText .infoWrap p,
+.proInfo .preText .infoWrap span {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+.proInfo .preText .infoWrap .basic,
+.proInfo .preText .infoWrap .workSkills,
+.proInfo .preText .infoWrap .workTools,
+.proInfo .preText .infoWrap .crossBrowsing {
+    width: 300px;
+}
+.proInfo .preText .infoWrap .basic h3,
+.proInfo .preText .infoWrap .workSkills h3,
+.proInfo .preText .infoWrap .workTools h3,
+.proInfo .preText .infoWrap .crossBrowsing h3 { margin: 0 0 2% 0; }
+
+.proInfo .preText .infoWrap .workSkills span { margin: 0 2% 0 0; }
+
+.proInfo .preText .infoWrap .workTools span.tool {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+.proInfo .preText .infoWrap .workTools span.vscode {
+    background-image: url('../images/vscodeLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .workTools span.figma {
+    background-image: url('../images/figmaLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .workTools span.photoshop {
+    background-image: url('../images/psLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .workTools span.ai {
+    background-image: url('../images/aiLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.proInfo .preText .infoWrap .crossBrowsing span.cross {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+.proInfo .preText .infoWrap .crossBrowsing span.chrome {
+    background-image: url('../images/chromeLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .crossBrowsing span.firefox {
+    background-image: url('../images/firefoxLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .crossBrowsing span.edge {
+    background-image: url('../images/edgeLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText .infoWrap .crossBrowsing span.ie {
+    background-image: url('../images/ieLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proInfo .preText > button {
+    display: block;
+    margin: 3% 0 0 0;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Cinzel', serif;
+}
+.proInfo .preText > button.probPdf {
+    width: 240px;
+}
+.proInfo .preText > button:hover {
+    border: none;
+    background-color: #74959A;
+    color: #ededed;
+}
+
+/* Project B - 충북콘텐츠코리아랩 */
+.topicB .proInfo .preText .keyword .keyBox p:first-child { padding: 30px 0 0 0; }
+.topicB .proInfo .preText .keyword .keyBox p:nth-of-type(2) { padding: 35px 0 0 0; }
+
+/* 리모컨 컨트롤러 슬라이드 영역 */
+.verticalSlide { 
+    width: 100%;
+    height: auto;
+    margin: 2% auto 2%;
+}
+.verticalSlide .slider-for {
+    width: 100%;
+    padding: 20px;
+}
+.verticalSlide .slider-for .slide {
+    width: 100%;
+    display: block;
+}
+.verticalSlide .slider-nav {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.verticalSlide .slider-nav .slide {
+    cursor: pointer;
+    width: 100%;
+    margin: 0 0.5%;
+}
+.controleImgs .slide img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-prev::before {
+    content: "\f104";
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: #000;
+}
+.slick-next::before {
+    content: "\f105";
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: #000;
+}
+
+.modalTableimgs { 
+    width: 65%; 
+    margin: 0 auto;
+}
+.proInfo .preText .modalTableimgs > div img { 
+    margin: 2% 0 3% 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Project C -- 국립한글박물관 */
+
+.topicC .proInfo .preText .keyword .keyBox p { padding: 42px 3px 0; }
+
+.topicC .proInfo .preText .indexImgs img { margin: 0; }
+
+.topicC .proInfo .preText .num03 { margin: 0; }
+
+.topicC .proInfo .preText .editImgs { width: 100%; }
+.topicC .proInfo .preText .editImgs > img { margin: 2% 0 0 0; }
+.topicC .proInfo .preText img.shortcut {  width: 65%; } 
+
+.topicC .proInfo .preText .sitemap { margin: 0; }
+
+/* Contact 영역 */
+.contact { 
+    padding: 3% 33%; 
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact h2, .contact h3 { font-family: 'Cinzel', serif;}
+
+.contact h2 { 
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin: 0 0 1% 0;
+}
+
+.contact .textBox {
+    height: 230px;
+    background: #92A9BD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact >  p,
+.contact .contactInfo { margin: 2% 0 0 2%; }
+
+footer .contact .contactInfo p:first-child { margin: 0 0 1% 0; }
+
+.contact .contactInfo p { 
+    font-weight: bold;
+    color: #000;
+}
+
+.contact .contactInfo p span { font-family: 'Cinzel', serif;}
+
+footer { background: #474747; }
+footer .copy { margin: 2% 15% 0; }
+footer .copy p {
+    text-align: center;
+    color: #fff;
+    font-family: 'Cinzel';
+    font-size: 14px;
+}
+footer .copy p:last-child { font-family: 'Gowun Dodum', sans-serif;}
+
+
+
