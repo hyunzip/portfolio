@@ -62,11 +62,11 @@ $(function () {
     });
 
     $("button.proA").click(function() {
-        window.open("https://ezportfolio.cafe24.com/ez210927/njh/%ED%95%98%EA%B2%90%EB%8B%A4%EC%A6%88/haagendazs.html");
+        window.open("https://hyunzip.github.io/portfolio/ProA/");
     })
 
     $("button.proB").click(function() {
-        window.open("https://ezportfolio.cafe24.com/ez210927/njh/contentslab/");
+        window.open("https://hyunzip.github.io/portfolio/ProB/");
     })
     $("button.probPdf").click(function() {
         window.open("https://runauxlabs.github.io/portfolio/ui/njh_ui.pdf");
@@ -74,7 +74,7 @@ $(function () {
 
 
     $("button.proC").click(function() {
-        window.open("https://ezportfolio.cafe24.com/ez210927/njh/hangeulmuseum/");
+        window.open("https://hyunzip.github.io/portfolio/ProC/");
     })
     
 });
