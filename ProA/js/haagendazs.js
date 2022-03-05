@@ -36,7 +36,7 @@ $(document).ready(function () {
     $(".gnb > li > a").click(function () {
       $(this).next().slideToggle(300);
       $(".gnb > li > a").not(this).next().slideUp(300);
-      return false;
+      // return false;
     });
   };
 });
