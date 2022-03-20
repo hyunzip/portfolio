@@ -35,7 +35,7 @@ $(function () {
     });
     } else if (innerWidth < 769) {
         $(".mapinner img").click(function() {
-            window.open("../img/place.pdf");
+            window.open("./img/place.pdf");
         })
     }
 
