@@ -15,26 +15,22 @@ body { min-width: 100%; }
     padding-top: 0;
     position: relative;
 }
-
 .sec01top:hover,
 .sec01top.on {
     background-color: transparent;
     transition: none;
 }
-
 .sec01top .inner {
     height: 90px;
     display: flex;
     justify-content: center;
     position: relative;
 }
-
 .sec01top .inner img {
     margin: 5px auto 0;
     width: 158px;
     height: 79px;
 }
-
 .sec01top .inner span.Mopenbt { 
     display: flex;
     position: absolute;
@@ -43,7 +39,6 @@ body { min-width: 100%; }
     color: #671C32;
     font-size: 30px; 
 }
-
 .sec01top .inner span.Mclosebt { 
     display: flex;
     position: absolute;
@@ -52,7 +47,6 @@ body { min-width: 100%; }
     color: #671C32;
     font-size: 30px; 
 }
-
 ul.gnb { width: 100%; }
 
 ul.gnb li.bt { 
@@ -63,7 +57,6 @@ ul.gnb li.bt {
     color: #671C32;
     font-size: 30px; 
 }
-
 .sec01top .inner .nav { 
     position: fixed;
     top: 0;
@@ -78,12 +71,10 @@ ul.gnb li.bt {
     background: #E1C7BA; 
     transform: translateX(100%);
 }
-
 .sec01top div.nav.on {
     transform: translateX(0%);
     transition: transform 0.7s;
 }
-
 .sec01top .inner ul.user-menu {
     width: 70%;
     display: flex;
@@ -92,7 +83,6 @@ ul.gnb li.bt {
     font-size: 15px;
     margin: 30px 0 0 0;
 }
-
 ul.gnb { flex-direction: column; }
 
 ul.gnb li {
@@ -106,20 +96,17 @@ ul.gnb li {
     align-items: center;
     justify-content: flex-start;
 }
-
 ul.gnb li a {
     font-size: 20px;
     height: 50px;
     line-height: 50px;
 }
-
 ul.gnb li > ul li { margin: 0; }
 
 ul.gnb ul > li a {
     font-size: 16px;
     font-weight: 400;
 }
-
 ul.gnb > li:first-child > a:hover,
 ul.gnb li a:hover:hover,
 ul.gnb li li a:hover:hover { border-bottom: none; }
@@ -140,25 +127,21 @@ ul.gnb > li > ul {
     justify-content: center;
     background: rgba(222, 168, 163, 0.27);
 }
-
 ul.gnb li:hover > ul {
     background-color: transparent;
     transform: none;
     transition: unset;
 }
-
 .sec01conbox {
     height: 365px;
     position: relative;
     padding: 0;
 }
-
 .sec01conbox .inner {
     padding-top: 0;
     position: relative;
     z-index: 2;
 }
-
 .sec01conbox::before { display: none; }
 
 .sec01conbox .brand-title {
@@ -166,12 +149,10 @@ ul.gnb li:hover > ul {
     width: 85%;
     margin: 35px auto 0;
 }
-
 .sec01conbox .brand-txt01 {
     width: 86%;
     padding: 70px 0 0 10px;
 }
-
 .sec01conbox .brand-txt02 { display: none; }
 /* section 01 영역 */
 
@@ -179,31 +160,27 @@ ul.gnb li:hover > ul {
     height: 820px;
     padding: 28px 0 0 0;
 }
-
 .sec02 .mySwiper {
     width: 100%;
     height: 100%;
 }
-
 .swiper-backface-hidden .swiper-slide { background: #fff; }
 
 .sec02conbox {
     flex-direction: column;
     justify-content: center;
 }
-
 .sec02 h2 { font-size: 30px; }
 
 .sec02 .menu-left {
     width: 100%;
     order: 1;
 }
-
 .sec02 .menu-left-inner {
     padding: 0;
     width: 100%;
+    height: 505px;
 }
-
 .sec02 .menu-left-inner .ice-title {
     font-size: 18px;
     text-align: center;
@@ -215,13 +192,11 @@ ul.gnb li:hover > ul {
     top: 30px;
     left: -5px;
 }
-
 .sec02 .menu-left-inner .flavor-text {
     font-size: 15px;
     text-align: center;
     padding: 25px 0 0 0;
 }
-
 .sec02 .menu-left-inner .menu-infocard .cap { flex-direction: column; }
 
 .sec02 .menu-left-inner .menu-infocard .info {
@@ -230,25 +205,21 @@ ul.gnb li:hover > ul {
     width: 85%;
     overflow-x: auto;
 }
-
 .sec02 .menu-left-inner .menu-infocard .cap p:first-child {
     width: 100%;
     text-align: center;
     margin: 27px 0 0 0;
 }
-
 .sec02 .menu-left-inner .menu-infocard .cap p:last-child {
     width: 100%;
     text-align: center;
     font-size: 14px;
     margin: 14px 0 0 0;
 }
-
 .sec02 .menu-right {
     width: 100%;
     height: 260px;
 }
-
 .sec02 .menu-right::before { display: none; }
 
 .sec02 .menu-right-gt-inner {
@@ -256,7 +227,6 @@ ul.gnb li:hover > ul {
     background-size: 156px 252px, 320px;
     background-position: 50% 50%, 50% -77%;
 }
-
 .sec02 .menu-left-inner .etc-info { 
     display: flex;
     flex-direction: column;
@@ -264,7 +234,6 @@ ul.gnb li:hover > ul {
     margin: 35px 0 0 0;
     font-size: 15px;
 }
-
 .sec02  .menu-left-inner .etc-info .order-bt { margin: 25px 0 0 0; }
 /* Green Tea Flavor */
 
@@ -272,7 +241,6 @@ ul.gnb li:hover > ul {
     width: 100%;
     height: 260px;
 }
-
 .sec02 .menu-right.cookie::before { display: none; } 
 
 .sec02 .menu-right-cc-inner {
@@ -286,7 +254,6 @@ ul.gnb li:hover > ul {
     width: 100%;
     height: 260px;
 }
-
 .sec02 .menu-right.md::before { display: none; }
 
 .sec02 .menu-right-md-inner {
@@ -300,7 +267,6 @@ ul.gnb li:hover > ul {
     width: 100%;
     height: 260px;
 }
-
 .sec02 .menu-right.sb::before { display: none; }
 
 .sec02 .menu-right-sb-inner {
@@ -314,7 +280,6 @@ ul.gnb li:hover > ul {
     width: 100%;
     height: 260px;
 }
-
 .sec02 .menu-right.vl::before { display: none; }
 
 .sec02 .menu-right-vl-inner {
@@ -322,6 +287,7 @@ ul.gnb li:hover > ul {
     background-size: 173px 300px, 320px;
     background-position: 50% 57%, 50% -77%;
 }
+.slick-dots { bottom: 55px; }
 /* Vanllia Flavor */
 /* Section 02 영역 */
 
@@ -349,8 +315,8 @@ ul.gnb li:hover > ul {
     padding: 64px 0 0 47px;
     background-image: url('../images/v_baaner.png');
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: 135% 100%;
+    background-size: 40%;
+    background-position: 110% 100%;
 }
 
 .sec03 .sec03-vl-left .sec03-left-vl-inner p:first-child {
@@ -387,8 +353,8 @@ ul.gnb li:hover > ul {
     padding: 64px 0 0 47px;
     background-image: url('../images/g_banner.png');
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: 140% 100%;
+    background-size: 40%;
+    background-position: 115% 100%;
 }
 
 .sec03 .sec03-gt-left .sec03-left-gt-inner p:first-child {
@@ -425,8 +391,8 @@ ul.gnb li:hover > ul {
     padding: 64px 0 0 47px;
     background-image: url('../images/s_banner.png');
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: 144% 100%;
+    background-size: 40%;
+    background-position: 115% 100%;
 }
 
 .sec03 .sec03-sb-left .sec03-left-sb-inner p:first-child {
@@ -468,8 +434,8 @@ ul.gnb li:hover > ul {
     padding: 64px 0 0 27px;
     background-image: url('../images/b_banner.png');
     background-repeat: no-repeat;
-    background-size: 55%;
-    background-position: 138% 100%;
+    background-size: 37%;
+    background-position: 118% 100%;
 }
 
 .sec03 .sec03-bc-left .sec03-left-bc-inner p:first-child {
