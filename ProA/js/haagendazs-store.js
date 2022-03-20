@@ -86,7 +86,7 @@ $(document).ready(function () {
 });
 
 var iw = window.innerWidth;
-if (iw < 640) {
+if (iw < 640 ) {
   function storeSwiper (){
     new Swiper('.swiper.storeSwiper', {
       infinite: true,
