@@ -72,7 +72,6 @@ $(function () {
         window.open("https://runauxlabs.github.io/portfolio/ui/njh_ui.pdf");
     })
 
-
     $("button.proC").click(function() {
         window.open("https://hyunzip.github.io/portfolio/ProC/");
     })
